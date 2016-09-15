@@ -9,7 +9,7 @@ script:
   - cd build
   - cmake ..
   - make
-  - ./unit_tests
+  - ./local_warehouse
 
 after_success:
   - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*"
