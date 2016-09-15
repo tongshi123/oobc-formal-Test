@@ -8,6 +8,7 @@
 #ifndef INCLUDE_ORDER_H
 #define INCLUDE_ORDER_H
 #include "status.h"
+#include <string>
 struct Warehouse;
 struct Order {
     Order(const std::string & name, unsigned int count)

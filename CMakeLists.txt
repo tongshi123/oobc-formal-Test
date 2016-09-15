@@ -33,11 +33,12 @@ endforeach()
 
 add_library(googletest ${GOOGLETEST_SOURCES})
 
+FILE(GLOB_RECURSE MyCSources src/*.cpp)
+
 add_executable(
     local_warehouse
-    test/main.cpp
+    ${MyCSources}
     test/test_local_warehouse.cpp
-    src/local_warehouse.cpp
     )
 
 add_dependencies(local_warehouse googletest)

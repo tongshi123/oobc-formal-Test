@@ -16,6 +16,8 @@ TEST_F(LocalWarehouseTest, SBAT_get_inventory) {
 	ASSERT_EQ(0, _warehouse.get_inventory("book"));
 	_warehouse.add("book", 100);
 	ASSERT_EQ(100, _warehouse.get_inventory("book"));
+	_warehouse.add("book", 100);
+	ASSERT_EQ(200, _warehouse.get_inventory("book"));
 }
 
 TEST_F(LocalWarehouseTest, SBAT_remove_with_enough_inventory) {
