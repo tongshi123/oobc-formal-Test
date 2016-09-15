@@ -2,9 +2,8 @@
  * order.cpp
  *
  *  Created on: 2016年9月15日
- *      Author: baidu
+ *      Author: jing.q.xu
  */
-
 
 #include "order.h"
 #include "warehouse.h"

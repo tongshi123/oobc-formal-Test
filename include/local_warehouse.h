@@ -2,7 +2,7 @@
  * local_warehouse.h
  *
  *  Created on: 2016年9月15日
- *      Author: baidu
+ *      Author: jing.q.xu
  */
 
 #ifndef INCLUDE_LOCAL_WAREHOUSE_H

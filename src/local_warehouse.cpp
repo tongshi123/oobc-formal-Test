@@ -2,7 +2,7 @@
  * local_warehouse.cpp
  *
  *  Created on: 2016年9月15日
- *      Author: baidu
+ *      Author: jing.q.xu
  */
 
 #include "local_warehouse.h"
