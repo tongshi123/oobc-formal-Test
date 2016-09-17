@@ -22,5 +22,4 @@ private:
     unsigned int _item_count;
 };
 
-
 #endif /* INCLUDE_ORDER_H */

@@ -36,15 +36,15 @@ add_library(googletest ${GOOGLETEST_SOURCES})
 FILE(GLOB_RECURSE MyCSources src/*.cpp)
 
 add_executable(
-    local_warehouse
+    local_warehouse_test
     ${MyCSources}
     test/test_local_warehouse.cpp
     )
 
-add_dependencies(local_warehouse googletest)
+add_dependencies(local_warehouse_test googletest)
 
 target_link_libraries(
-    local_warehouse
+    local_warehouse_test
     googletest
     pthread
     )
@@ -52,4 +52,4 @@ target_link_libraries(
 include(CTest)
 enable_testing()
 
-add_test(unit ${PROJECT_BINARY_DIR}/local_warehouse)
+add_test(unit ${PROJECT_BINARY_DIR}/local_warehouse_test)

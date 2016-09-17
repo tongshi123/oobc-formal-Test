@@ -25,7 +25,7 @@ TEST_F(LocalWarehouseTest, SBAT_remove_with_enough_inventory) {
 	ASSERT_EQ(100, _warehouse.get_inventory("book"));
 	_warehouse.remove("book", 10);
 	ASSERT_EQ(90, _warehouse.get_inventory("book"));
-	_warehouse.remove("book", 90);
+	_warehouse.remove("book", 100 - 10);
 	ASSERT_EQ(0, _warehouse.get_inventory("book"));
 }
 
