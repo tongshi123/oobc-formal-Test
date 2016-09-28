@@ -41,11 +41,6 @@ endforeach()
 
 add_library(googletest ${GOOGLETEST_SOURCES})
 
-#FILE(GLOB_RECURSE MyCSources src/*.cpp)
-#foreach(_src ${MyCSources})
-#    message(status "#############" ${_src})
-#endforeach()
-
 add_executable(
     test_local_warehouse
     src/local_warehouse.cpp
@@ -59,27 +54,22 @@ add_executable(
     test/test_order.cpp
     )
     
-add_dependencies(test_local_warehouse googletest)
+set(UT_DIR ${PROJECT_SOURCE_DIR}/test/)
+file(GLOB unit_tests test/*.cpp)
+foreach(test_file_name ${unit_tests} ) 
+    # I used a simple string replace, to cut off .cpp. 
+    string(REPLACE ".cpp" "" file_name ${test_file_name})
+    string(REPLACE ${UT_DIR} "" test_name ${file_name})
 
-target_link_libraries(
-    test_local_warehouse
-    googletest
-    pthread
-    )
+	add_dependencies(${test_name} googletest)
+	target_link_libraries(
+	    ${test_name}
+	    googletest
+	    pthread
+	    )
+	add_test(unit ${PROJECT_BINARY_DIR}/${test_name})
+endforeach( test_file_name ${unit_tests} )
 
-
-add_test(unit ${PROJECT_BINARY_DIR}/test_local_warehouse)
-
-add_dependencies(test_order googletest)
-
-target_link_libraries(
-    test_order
-    googletest
-    pthread
-    )
-
-add_test(unit ${PROJECT_BINARY_DIR}/test_order)
 
 include(CTest)
 enable_testing()
-
