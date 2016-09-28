@@ -11,6 +11,7 @@ script:
   - make
   - cd ..
   - ./run_test.sh
+  - cd build
 after_success:
   - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*"
 
