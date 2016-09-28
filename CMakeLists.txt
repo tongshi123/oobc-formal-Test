@@ -4,11 +4,15 @@ project(code_for_ut_training)
 
 enable_language(C CXX)
 
-if(CMAKE_CXX_COMPILER_ID MATCHES GNU)
-    set(CMAKE_CXX_FLAGS         "-Wall -Wno-unknown-pragmas -Wno-sign-compare -Woverloaded-virtual -Wwrite-strings -Wno-unused")
-    set(CMAKE_CXX_FLAGS_DEBUG   "-O0 -g3")
-    set(CMAKE_CXX_FLAGS_RELEASE "-O3")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage")
+include(CheckCXXCompilerFlag)
+CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
+CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
+if(COMPILER_SUPPORTS_CXX11)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+elseif(COMPILER_SUPPORTS_CXX0X)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
+else()
+    message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
 endif()
 
 include_directories(
@@ -33,18 +37,21 @@ endforeach()
 
 add_library(googletest ${GOOGLETEST_SOURCES})
 
-FILE(GLOB_RECURSE MyCSources src/*.cpp)
+#FILE(GLOB_RECURSE MyCSources src/*.cpp)
+#foreach(_src ${MyCSources})
+#    message(status "#############" ${_src})
+#endforeach()
 
 add_executable(
-    local_warehouse_test
-    ${MyCSources}
+    test_local_warehouse
+    src/local_warehouse.cpp
     test/test_local_warehouse.cpp
     )
 
-add_dependencies(local_warehouse_test googletest)
+add_dependencies(test_local_warehouse googletest)
 
 target_link_libraries(
-    local_warehouse_test
+    test_local_warehouse
     googletest
     pthread
     )
@@ -52,4 +59,24 @@ target_link_libraries(
 include(CTest)
 enable_testing()
 
-add_test(unit ${PROJECT_BINARY_DIR}/local_warehouse_test)
+add_test(unit ${PROJECT_BINARY_DIR}/test_local_warehouse)
+
+add_executable(
+    test_order
+    src/local_warehouse.cpp
+    src/order.cpp
+    test/test_order.cpp
+    )
+
+add_dependencies(test_order googletest)
+
+target_link_libraries(
+    test_order
+    googletest
+    pthread
+    )
+
+include(CTest)
+enable_testing()
+
+add_test(unit ${PROJECT_BINARY_DIR}/test_local_warehouse ${PROJECT_BINARY_DIR}/test_order)
