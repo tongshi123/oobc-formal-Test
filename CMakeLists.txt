@@ -80,3 +80,4 @@ include(CTest)
 enable_testing()
 
 add_test(unit ${PROJECT_BINARY_DIR}/test_local_warehouse ${PROJECT_BINARY_DIR}/test_order)
+
