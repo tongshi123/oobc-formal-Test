@@ -52,6 +52,13 @@ add_executable(
     test/test_local_warehouse.cpp
     )
 
+add_executable(
+    test_order
+    src/local_warehouse.cpp
+    src/order.cpp
+    test/test_order.cpp
+    )
+    
 add_dependencies(test_local_warehouse googletest)
 
 target_link_libraries(
@@ -60,17 +67,8 @@ target_link_libraries(
     pthread
     )
 
-include(CTest)
-enable_testing()
 
 add_test(unit ${PROJECT_BINARY_DIR}/test_local_warehouse)
-
-add_executable(
-    test_order
-    src/local_warehouse.cpp
-    src/order.cpp
-    test/test_order.cpp
-    )
 
 add_dependencies(test_order googletest)
 
@@ -80,8 +78,8 @@ target_link_libraries(
     pthread
     )
 
+add_test(unit ${PROJECT_BINARY_DIR}/test_order)
+
 include(CTest)
 enable_testing()
-
-add_test(unit ${PROJECT_BINARY_DIR}/test_local_warehouse ${PROJECT_BINARY_DIR}/test_order)
 
