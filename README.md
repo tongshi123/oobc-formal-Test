@@ -24,5 +24,6 @@ mkdir build
 cd build
 cmake ..
 make -j
-make test
+cd ..
+./run_test
 ```
