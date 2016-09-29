@@ -3,15 +3,15 @@
 [![License](https://img.shields.io/badge/license-%20BSD--3-blue.svg)](../master/LICENSE)
 
 
-code_for_ut_training
+cpp_dev_skeleton
 ==========
 
 C/C++ unit test demo using [Google Test](https://code.google.com/p/googletest) deployed to
-[Travis-CI](https://travis-ci.org/jing-q-xu/code_for_ut_training/builds) with test coverage
-deployed to [Coveralls](https://coveralls.io/r/jing-q-xu/code_for_ut_training).
+[Travis-CI](https://travis-ci.org/jing-q-xu/cpp_dev_skeleton/builds) with test coverage
+deployed to [Coveralls](https://coveralls.io/r/jing-q-xu/cpp_dev_skeleton).
 
-- [Build and test history](https://travis-ci.org/jing-q-xu/code_for_ut_training/builds)
-- [Code coverage](https://coveralls.io/r/jing-q-xu/code_for_ut_training)
+- [Build and test history](https://travis-ci.org/jing-q-xu/cpp_dev_skeleton/builds)
+- [Code coverage](https://coveralls.io/r/jing-q-xu/cpp_dev_skeleton)
 - Licensed under [BSD-3](../master/LICENSE)
 
 
