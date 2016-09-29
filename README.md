@@ -18,8 +18,8 @@ deployed to [Coveralls](https://coveralls.io/r/jing-q-xu/cpp_dev_skeleton).
 ## How to build this demo
 
 ```
-git clone --recursive https://github.com/jing-q-xu/code_for_ut_training.git
-cd code_for_ut_training
+git clone --recursive https://github.com/jing-q-xu/cpp_dev_skeleton.git
+cd cpp_dev_skeleton
 mkdir build
 cd build
 cmake ..
