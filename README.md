@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/jing-q-xu/code_for_ut_training.svg?branch=master)](https://travis-ci.org/jing-q-xu/code_for_ut_training/builds)
-[![Coverage Status](https://coveralls.io/repos/github/jing-q-xu/code_for_ut_training/badge.svg)](https://coveralls.io/github/jing-q-xu/code_for_ut_training)
+[![Build Status](https://travis-ci.org/jing-q-xu/cpp_dev_skeleton.svg?branch=master)](https://travis-ci.org/jing-q-xu/cpp_dev_skeleton/builds)
+[![Coverage Status](https://coveralls.io/repos/github/jing-q-xu/cpp_dev_skeleton/badge.svg)](https://coveralls.io/github/jing-q-xu/cpp_dev_skeleton)
 [![License](https://img.shields.io/badge/license-%20BSD--3-blue.svg)](../master/LICENSE)
 
 
