@@ -53,12 +53,6 @@ add_executable(
     src/order.cpp
     test/test_order.cpp
     )
-
-add_executable(
-    addNum
-    src/addNum.cpp
-    test/test_addNum.cpp
-    )
     
 set(UT_DIR ${PROJECT_SOURCE_DIR}/test/)
 file(GLOB unit_tests test/*.cpp)
