@@ -6,15 +6,24 @@
  */
 
 #include "addNum.h"
-#include "gtest/gtest.h"
+#include <gtest/gtest.h>
 
-Test(MyTestCase, MyTest_Success)
-{
-	EXPECT_EQ(2, MySum(1, 1));
+/*
+TEST(AddNumTest, two_plus_three_should_be_five){
+
+
 }
+*/
 
-Test(MyTestCase, MyTest_Success)
+
+TEST(MyTestCase, MyTest_Success)
+{
+	EXPECT_NE(4, MySum(1, 1));
+}
+/*
+
+TEST(MyTestCase, MyTest_Success)
 {
        EXPECT_EQ(3, MySum(1, 2));
 }
-
+*/

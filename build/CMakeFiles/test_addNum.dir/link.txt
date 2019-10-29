@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -O0 --coverage -std=c++11   CMakeFiles/test_addNum.dir/src/addNum.cpp.o CMakeFiles/test_addNum.dir/test/test_addNum.cpp.o  -o test_addNum -rdynamic libgoogletest.a -lpthread 

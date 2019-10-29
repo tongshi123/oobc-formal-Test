@@ -42,23 +42,18 @@ endforeach()
 add_library(googletest ${GOOGLETEST_SOURCES})
 
 add_executable(
-    test_local_warehouse
-    src/local_warehouse.cpp
-    test/test_local_warehouse.cpp
-    )
-
-add_executable(
-    test_order
-    src/local_warehouse.cpp
-    src/order.cpp
-    test/test_order.cpp
-    )
-
-add_executable(
-    addNum
+    test_addNum
     src/addNum.cpp
     test/test_addNum.cpp
     )
+
+add_executable(
+    test_RectangleCla
+    src/RectangleCla.cpp
+    test/test_RectangleCla.cpp
+
+    )
+    
     
 set(UT_DIR ${PROJECT_SOURCE_DIR}/test/)
 file(GLOB unit_tests test/*.cpp)
