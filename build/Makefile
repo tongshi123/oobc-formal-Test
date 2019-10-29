@@ -135,6 +135,19 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
+# Target rules for targets named ContinuousCoverage
+
+# Build rule for target.
+ContinuousCoverage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ContinuousCoverage
+.PHONY : ContinuousCoverage
+
+# fast build rule for target.
+ContinuousCoverage/fast:
+	$(MAKE) -f CMakeFiles/ContinuousCoverage.dir/build.make CMakeFiles/ContinuousCoverage.dir/build
+.PHONY : ContinuousCoverage/fast
+
+#=============================================================================
 # Target rules for targets named ContinuousTest
 
 # Build rule for target.
@@ -200,32 +213,6 @@ NightlyUpdate/fast:
 .PHONY : NightlyUpdate/fast
 
 #=============================================================================
-# Target rules for targets named ContinuousMemCheck
-
-# Build rule for target.
-ContinuousMemCheck: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ContinuousMemCheck
-.PHONY : ContinuousMemCheck
-
-# fast build rule for target.
-ContinuousMemCheck/fast:
-	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/build
-.PHONY : ContinuousMemCheck/fast
-
-#=============================================================================
-# Target rules for targets named Nightly
-
-# Build rule for target.
-Nightly: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Nightly
-.PHONY : Nightly
-
-# fast build rule for target.
-Nightly/fast:
-	$(MAKE) -f CMakeFiles/Nightly.dir/build.make CMakeFiles/Nightly.dir/build
-.PHONY : Nightly/fast
-
-#=============================================================================
 # Target rules for targets named Continuous
 
 # Build rule for target.
@@ -252,32 +239,6 @@ googletest/fast:
 .PHONY : googletest/fast
 
 #=============================================================================
-# Target rules for targets named ContinuousCoverage
-
-# Build rule for target.
-ContinuousCoverage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ContinuousCoverage
-.PHONY : ContinuousCoverage
-
-# fast build rule for target.
-ContinuousCoverage/fast:
-	$(MAKE) -f CMakeFiles/ContinuousCoverage.dir/build.make CMakeFiles/ContinuousCoverage.dir/build
-.PHONY : ContinuousCoverage/fast
-
-#=============================================================================
-# Target rules for targets named test_RectangleCla
-
-# Build rule for target.
-test_RectangleCla: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_RectangleCla
-.PHONY : test_RectangleCla
-
-# fast build rule for target.
-test_RectangleCla/fast:
-	$(MAKE) -f CMakeFiles/test_RectangleCla.dir/build.make CMakeFiles/test_RectangleCla.dir/build
-.PHONY : test_RectangleCla/fast
-
-#=============================================================================
 # Target rules for targets named ExperimentalStart
 
 # Build rule for target.
@@ -289,6 +250,58 @@ ExperimentalStart: cmake_check_build_system
 ExperimentalStart/fast:
 	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/build
 .PHONY : ExperimentalStart/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousMemCheck
+
+# Build rule for target.
+ContinuousMemCheck: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ContinuousMemCheck
+.PHONY : ContinuousMemCheck
+
+# fast build rule for target.
+ContinuousMemCheck/fast:
+	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/build
+.PHONY : ContinuousMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named Nightly
+
+# Build rule for target.
+Nightly: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Nightly
+.PHONY : Nightly
+
+# fast build rule for target.
+Nightly/fast:
+	$(MAKE) -f CMakeFiles/Nightly.dir/build.make CMakeFiles/Nightly.dir/build
+.PHONY : Nightly/fast
+
+#=============================================================================
+# Target rules for targets named test_GetRectArea
+
+# Build rule for target.
+test_GetRectArea: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_GetRectArea
+.PHONY : test_GetRectArea
+
+# fast build rule for target.
+test_GetRectArea/fast:
+	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/build
+.PHONY : test_GetRectArea/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalMemCheck
+
+# Build rule for target.
+ExperimentalMemCheck: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalMemCheck
+.PHONY : ExperimentalMemCheck
+
+# fast build rule for target.
+ExperimentalMemCheck/fast:
+	$(MAKE) -f CMakeFiles/ExperimentalMemCheck.dir/build.make CMakeFiles/ExperimentalMemCheck.dir/build
+.PHONY : ExperimentalMemCheck/fast
 
 #=============================================================================
 # Target rules for targets named NightlyBuild
@@ -511,19 +524,6 @@ ExperimentalTest/fast:
 	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
 .PHONY : ExperimentalTest/fast
 
-#=============================================================================
-# Target rules for targets named ExperimentalMemCheck
-
-# Build rule for target.
-ExperimentalMemCheck: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalMemCheck
-.PHONY : ExperimentalMemCheck
-
-# fast build rule for target.
-ExperimentalMemCheck/fast:
-	$(MAKE) -f CMakeFiles/ExperimentalMemCheck.dir/build.make CMakeFiles/ExperimentalMemCheck.dir/build
-.PHONY : ExperimentalMemCheck/fast
-
 external/googletest/googletest/src/gtest-all.o: external/googletest/googletest/src/gtest-all.cc.o
 
 .PHONY : external/googletest/googletest/src/gtest-all.o
@@ -578,32 +578,32 @@ external/googletest/googletest/src/gtest_main.cc.s:
 	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/external/googletest/googletest/src/gtest_main.cc.s
 .PHONY : external/googletest/googletest/src/gtest_main.cc.s
 
-src/RectangleCla.o: src/RectangleCla.cpp.o
+src/Rectangle.o: src/Rectangle.cpp.o
 
-.PHONY : src/RectangleCla.o
+.PHONY : src/Rectangle.o
 
 # target to build an object file
-src/RectangleCla.cpp.o:
-	$(MAKE) -f CMakeFiles/test_RectangleCla.dir/build.make CMakeFiles/test_RectangleCla.dir/src/RectangleCla.cpp.o
-.PHONY : src/RectangleCla.cpp.o
+src/Rectangle.cpp.o:
+	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.o
+.PHONY : src/Rectangle.cpp.o
 
-src/RectangleCla.i: src/RectangleCla.cpp.i
+src/Rectangle.i: src/Rectangle.cpp.i
 
-.PHONY : src/RectangleCla.i
+.PHONY : src/Rectangle.i
 
 # target to preprocess a source file
-src/RectangleCla.cpp.i:
-	$(MAKE) -f CMakeFiles/test_RectangleCla.dir/build.make CMakeFiles/test_RectangleCla.dir/src/RectangleCla.cpp.i
-.PHONY : src/RectangleCla.cpp.i
+src/Rectangle.cpp.i:
+	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.i
+.PHONY : src/Rectangle.cpp.i
 
-src/RectangleCla.s: src/RectangleCla.cpp.s
+src/Rectangle.s: src/Rectangle.cpp.s
 
-.PHONY : src/RectangleCla.s
+.PHONY : src/Rectangle.s
 
 # target to generate assembly for a file
-src/RectangleCla.cpp.s:
-	$(MAKE) -f CMakeFiles/test_RectangleCla.dir/build.make CMakeFiles/test_RectangleCla.dir/src/RectangleCla.cpp.s
-.PHONY : src/RectangleCla.cpp.s
+src/Rectangle.cpp.s:
+	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.s
+.PHONY : src/Rectangle.cpp.s
 
 src/addNum.o: src/addNum.cpp.o
 
@@ -632,32 +632,32 @@ src/addNum.cpp.s:
 	$(MAKE) -f CMakeFiles/test_addNum.dir/build.make CMakeFiles/test_addNum.dir/src/addNum.cpp.s
 .PHONY : src/addNum.cpp.s
 
-test/test_RectangleCla.o: test/test_RectangleCla.cpp.o
+test/test_GetRectArea.o: test/test_GetRectArea.cpp.o
 
-.PHONY : test/test_RectangleCla.o
+.PHONY : test/test_GetRectArea.o
 
 # target to build an object file
-test/test_RectangleCla.cpp.o:
-	$(MAKE) -f CMakeFiles/test_RectangleCla.dir/build.make CMakeFiles/test_RectangleCla.dir/test/test_RectangleCla.cpp.o
-.PHONY : test/test_RectangleCla.cpp.o
+test/test_GetRectArea.cpp.o:
+	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/test/test_GetRectArea.cpp.o
+.PHONY : test/test_GetRectArea.cpp.o
 
-test/test_RectangleCla.i: test/test_RectangleCla.cpp.i
+test/test_GetRectArea.i: test/test_GetRectArea.cpp.i
 
-.PHONY : test/test_RectangleCla.i
+.PHONY : test/test_GetRectArea.i
 
 # target to preprocess a source file
-test/test_RectangleCla.cpp.i:
-	$(MAKE) -f CMakeFiles/test_RectangleCla.dir/build.make CMakeFiles/test_RectangleCla.dir/test/test_RectangleCla.cpp.i
-.PHONY : test/test_RectangleCla.cpp.i
+test/test_GetRectArea.cpp.i:
+	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/test/test_GetRectArea.cpp.i
+.PHONY : test/test_GetRectArea.cpp.i
 
-test/test_RectangleCla.s: test/test_RectangleCla.cpp.s
+test/test_GetRectArea.s: test/test_GetRectArea.cpp.s
 
-.PHONY : test/test_RectangleCla.s
+.PHONY : test/test_GetRectArea.s
 
 # target to generate assembly for a file
-test/test_RectangleCla.cpp.s:
-	$(MAKE) -f CMakeFiles/test_RectangleCla.dir/build.make CMakeFiles/test_RectangleCla.dir/test/test_RectangleCla.cpp.s
-.PHONY : test/test_RectangleCla.cpp.s
+test/test_GetRectArea.cpp.s:
+	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/test/test_GetRectArea.cpp.s
+.PHONY : test/test_GetRectArea.cpp.s
 
 test/test_addNum.o: test/test_addNum.cpp.o
 
@@ -695,18 +695,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ContinuousSubmit"
+	@echo "... ContinuousCoverage"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousBuild"
 	@echo "... ContinuousUpdate"
 	@echo "... ContinuousStart"
 	@echo "... NightlyUpdate"
-	@echo "... ContinuousMemCheck"
-	@echo "... Nightly"
 	@echo "... Continuous"
 	@echo "... googletest"
-	@echo "... ContinuousCoverage"
-	@echo "... test_RectangleCla"
 	@echo "... ExperimentalStart"
+	@echo "... ContinuousMemCheck"
+	@echo "... Nightly"
+	@echo "... test_GetRectArea"
+	@echo "... ExperimentalMemCheck"
 	@echo "... NightlyBuild"
 	@echo "... NightlyTest"
 	@echo "... NightlyStart"
@@ -725,22 +726,21 @@ help:
 	@echo "... ExperimentalBuild"
 	@echo "... NightlyConfigure"
 	@echo "... ExperimentalTest"
-	@echo "... ExperimentalMemCheck"
 	@echo "... external/googletest/googletest/src/gtest-all.o"
 	@echo "... external/googletest/googletest/src/gtest-all.i"
 	@echo "... external/googletest/googletest/src/gtest-all.s"
 	@echo "... external/googletest/googletest/src/gtest_main.o"
 	@echo "... external/googletest/googletest/src/gtest_main.i"
 	@echo "... external/googletest/googletest/src/gtest_main.s"
-	@echo "... src/RectangleCla.o"
-	@echo "... src/RectangleCla.i"
-	@echo "... src/RectangleCla.s"
+	@echo "... src/Rectangle.o"
+	@echo "... src/Rectangle.i"
+	@echo "... src/Rectangle.s"
 	@echo "... src/addNum.o"
 	@echo "... src/addNum.i"
 	@echo "... src/addNum.s"
-	@echo "... test/test_RectangleCla.o"
-	@echo "... test/test_RectangleCla.i"
-	@echo "... test/test_RectangleCla.s"
+	@echo "... test/test_GetRectArea.o"
+	@echo "... test/test_GetRectArea.i"
+	@echo "... test/test_GetRectArea.s"
 	@echo "... test/test_addNum.o"
 	@echo "... test/test_addNum.i"
 	@echo "... test/test_addNum.s"

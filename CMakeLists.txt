@@ -48,10 +48,9 @@ add_executable(
     )
 
 add_executable(
-    test_RectangleCla
-    src/RectangleCla.cpp
-    test/test_RectangleCla.cpp
-
+    test_GetRectArea
+    src/Rectangle.cpp
+    test/test_GetRectArea.cpp
     )
     
     
