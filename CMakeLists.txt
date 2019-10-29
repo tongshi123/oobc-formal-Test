@@ -41,11 +41,6 @@ endforeach()
 
 add_library(googletest ${GOOGLETEST_SOURCES})
 
-add_executable(
-    test_addNum
-    src/addNum.cpp
-    test/test_addNum.cpp
-    )
 
 add_executable(
     test_GetRectArea

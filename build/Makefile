@@ -213,6 +213,19 @@ NightlyUpdate/fast:
 .PHONY : NightlyUpdate/fast
 
 #=============================================================================
+# Target rules for targets named NightlyBuild
+
+# Build rule for target.
+NightlyBuild: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NightlyBuild
+.PHONY : NightlyBuild
+
+# fast build rule for target.
+NightlyBuild/fast:
+	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/build
+.PHONY : NightlyBuild/fast
+
+#=============================================================================
 # Target rules for targets named Continuous
 
 # Build rule for target.
@@ -237,45 +250,6 @@ googletest: cmake_check_build_system
 googletest/fast:
 	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
 .PHONY : googletest/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalStart
-
-# Build rule for target.
-ExperimentalStart: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalStart
-.PHONY : ExperimentalStart
-
-# fast build rule for target.
-ExperimentalStart/fast:
-	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/build
-.PHONY : ExperimentalStart/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousMemCheck
-
-# Build rule for target.
-ContinuousMemCheck: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ContinuousMemCheck
-.PHONY : ContinuousMemCheck
-
-# fast build rule for target.
-ContinuousMemCheck/fast:
-	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/build
-.PHONY : ContinuousMemCheck/fast
-
-#=============================================================================
-# Target rules for targets named Nightly
-
-# Build rule for target.
-Nightly: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Nightly
-.PHONY : Nightly
-
-# fast build rule for target.
-Nightly/fast:
-	$(MAKE) -f CMakeFiles/Nightly.dir/build.make CMakeFiles/Nightly.dir/build
-.PHONY : Nightly/fast
 
 #=============================================================================
 # Target rules for targets named test_GetRectArea
@@ -304,17 +278,30 @@ ExperimentalMemCheck/fast:
 .PHONY : ExperimentalMemCheck/fast
 
 #=============================================================================
-# Target rules for targets named NightlyBuild
+# Target rules for targets named ContinuousMemCheck
 
 # Build rule for target.
-NightlyBuild: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NightlyBuild
-.PHONY : NightlyBuild
+ContinuousMemCheck: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ContinuousMemCheck
+.PHONY : ContinuousMemCheck
 
 # fast build rule for target.
-NightlyBuild/fast:
-	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/build
-.PHONY : NightlyBuild/fast
+ContinuousMemCheck/fast:
+	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/build
+.PHONY : ContinuousMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named Nightly
+
+# Build rule for target.
+Nightly: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Nightly
+.PHONY : Nightly
+
+# fast build rule for target.
+Nightly/fast:
+	$(MAKE) -f CMakeFiles/Nightly.dir/build.make CMakeFiles/Nightly.dir/build
+.PHONY : Nightly/fast
 
 #=============================================================================
 # Target rules for targets named NightlyTest
@@ -369,43 +356,17 @@ NightlyMemCheck/fast:
 .PHONY : NightlyMemCheck/fast
 
 #=============================================================================
-# Target rules for targets named ExperimentalSubmit
+# Target rules for targets named ExperimentalStart
 
 # Build rule for target.
-ExperimentalSubmit: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalSubmit
-.PHONY : ExperimentalSubmit
+ExperimentalStart: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalStart
+.PHONY : ExperimentalStart
 
 # fast build rule for target.
-ExperimentalSubmit/fast:
-	$(MAKE) -f CMakeFiles/ExperimentalSubmit.dir/build.make CMakeFiles/ExperimentalSubmit.dir/build
-.PHONY : ExperimentalSubmit/fast
-
-#=============================================================================
-# Target rules for targets named Experimental
-
-# Build rule for target.
-Experimental: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Experimental
-.PHONY : Experimental
-
-# fast build rule for target.
-Experimental/fast:
-	$(MAKE) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/build
-.PHONY : Experimental/fast
-
-#=============================================================================
-# Target rules for targets named NightlySubmit
-
-# Build rule for target.
-NightlySubmit: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NightlySubmit
-.PHONY : NightlySubmit
-
-# fast build rule for target.
-NightlySubmit/fast:
-	$(MAKE) -f CMakeFiles/NightlySubmit.dir/build.make CMakeFiles/NightlySubmit.dir/build
-.PHONY : NightlySubmit/fast
+ExperimentalStart/fast:
+	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/build
+.PHONY : ExperimentalStart/fast
 
 #=============================================================================
 # Target rules for targets named ContinuousConfigure
@@ -460,19 +421,6 @@ ExperimentalConfigure/fast:
 .PHONY : ExperimentalConfigure/fast
 
 #=============================================================================
-# Target rules for targets named test_addNum
-
-# Build rule for target.
-test_addNum: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_addNum
-.PHONY : test_addNum
-
-# fast build rule for target.
-test_addNum/fast:
-	$(MAKE) -f CMakeFiles/test_addNum.dir/build.make CMakeFiles/test_addNum.dir/build
-.PHONY : test_addNum/fast
-
-#=============================================================================
 # Target rules for targets named ExperimentalCoverage
 
 # Build rule for target.
@@ -523,6 +471,45 @@ ExperimentalTest: cmake_check_build_system
 ExperimentalTest/fast:
 	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
 .PHONY : ExperimentalTest/fast
+
+#=============================================================================
+# Target rules for targets named Experimental
+
+# Build rule for target.
+Experimental: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Experimental
+.PHONY : Experimental
+
+# fast build rule for target.
+Experimental/fast:
+	$(MAKE) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/build
+.PHONY : Experimental/fast
+
+#=============================================================================
+# Target rules for targets named NightlySubmit
+
+# Build rule for target.
+NightlySubmit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NightlySubmit
+.PHONY : NightlySubmit
+
+# fast build rule for target.
+NightlySubmit/fast:
+	$(MAKE) -f CMakeFiles/NightlySubmit.dir/build.make CMakeFiles/NightlySubmit.dir/build
+.PHONY : NightlySubmit/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalSubmit
+
+# Build rule for target.
+ExperimentalSubmit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalSubmit
+.PHONY : ExperimentalSubmit
+
+# fast build rule for target.
+ExperimentalSubmit/fast:
+	$(MAKE) -f CMakeFiles/ExperimentalSubmit.dir/build.make CMakeFiles/ExperimentalSubmit.dir/build
+.PHONY : ExperimentalSubmit/fast
 
 external/googletest/googletest/src/gtest-all.o: external/googletest/googletest/src/gtest-all.cc.o
 
@@ -605,33 +592,6 @@ src/Rectangle.cpp.s:
 	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.s
 .PHONY : src/Rectangle.cpp.s
 
-src/addNum.o: src/addNum.cpp.o
-
-.PHONY : src/addNum.o
-
-# target to build an object file
-src/addNum.cpp.o:
-	$(MAKE) -f CMakeFiles/test_addNum.dir/build.make CMakeFiles/test_addNum.dir/src/addNum.cpp.o
-.PHONY : src/addNum.cpp.o
-
-src/addNum.i: src/addNum.cpp.i
-
-.PHONY : src/addNum.i
-
-# target to preprocess a source file
-src/addNum.cpp.i:
-	$(MAKE) -f CMakeFiles/test_addNum.dir/build.make CMakeFiles/test_addNum.dir/src/addNum.cpp.i
-.PHONY : src/addNum.cpp.i
-
-src/addNum.s: src/addNum.cpp.s
-
-.PHONY : src/addNum.s
-
-# target to generate assembly for a file
-src/addNum.cpp.s:
-	$(MAKE) -f CMakeFiles/test_addNum.dir/build.make CMakeFiles/test_addNum.dir/src/addNum.cpp.s
-.PHONY : src/addNum.cpp.s
-
 test/test_GetRectArea.o: test/test_GetRectArea.cpp.o
 
 .PHONY : test/test_GetRectArea.o
@@ -659,33 +619,6 @@ test/test_GetRectArea.cpp.s:
 	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/test/test_GetRectArea.cpp.s
 .PHONY : test/test_GetRectArea.cpp.s
 
-test/test_addNum.o: test/test_addNum.cpp.o
-
-.PHONY : test/test_addNum.o
-
-# target to build an object file
-test/test_addNum.cpp.o:
-	$(MAKE) -f CMakeFiles/test_addNum.dir/build.make CMakeFiles/test_addNum.dir/test/test_addNum.cpp.o
-.PHONY : test/test_addNum.cpp.o
-
-test/test_addNum.i: test/test_addNum.cpp.i
-
-.PHONY : test/test_addNum.i
-
-# target to preprocess a source file
-test/test_addNum.cpp.i:
-	$(MAKE) -f CMakeFiles/test_addNum.dir/build.make CMakeFiles/test_addNum.dir/test/test_addNum.cpp.i
-.PHONY : test/test_addNum.cpp.i
-
-test/test_addNum.s: test/test_addNum.cpp.s
-
-.PHONY : test/test_addNum.s
-
-# target to generate assembly for a file
-test/test_addNum.cpp.s:
-	$(MAKE) -f CMakeFiles/test_addNum.dir/build.make CMakeFiles/test_addNum.dir/test/test_addNum.cpp.s
-.PHONY : test/test_addNum.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -701,31 +634,30 @@ help:
 	@echo "... ContinuousUpdate"
 	@echo "... ContinuousStart"
 	@echo "... NightlyUpdate"
+	@echo "... NightlyBuild"
 	@echo "... Continuous"
 	@echo "... googletest"
-	@echo "... ExperimentalStart"
-	@echo "... ContinuousMemCheck"
-	@echo "... Nightly"
 	@echo "... test_GetRectArea"
 	@echo "... ExperimentalMemCheck"
-	@echo "... NightlyBuild"
+	@echo "... ContinuousMemCheck"
+	@echo "... Nightly"
 	@echo "... NightlyTest"
 	@echo "... NightlyStart"
 	@echo "... NightlyMemoryCheck"
 	@echo "... NightlyMemCheck"
-	@echo "... ExperimentalSubmit"
-	@echo "... Experimental"
-	@echo "... NightlySubmit"
+	@echo "... ExperimentalStart"
 	@echo "... ContinuousConfigure"
 	@echo "... NightlyCoverage"
 	@echo "... ExperimentalUpdate"
 	@echo "... test"
 	@echo "... ExperimentalConfigure"
-	@echo "... test_addNum"
 	@echo "... ExperimentalCoverage"
 	@echo "... ExperimentalBuild"
 	@echo "... NightlyConfigure"
 	@echo "... ExperimentalTest"
+	@echo "... Experimental"
+	@echo "... NightlySubmit"
+	@echo "... ExperimentalSubmit"
 	@echo "... external/googletest/googletest/src/gtest-all.o"
 	@echo "... external/googletest/googletest/src/gtest-all.i"
 	@echo "... external/googletest/googletest/src/gtest-all.s"
@@ -735,15 +667,9 @@ help:
 	@echo "... src/Rectangle.o"
 	@echo "... src/Rectangle.i"
 	@echo "... src/Rectangle.s"
-	@echo "... src/addNum.o"
-	@echo "... src/addNum.i"
-	@echo "... src/addNum.s"
 	@echo "... test/test_GetRectArea.o"
 	@echo "... test/test_GetRectArea.i"
 	@echo "... test/test_GetRectArea.s"
-	@echo "... test/test_addNum.o"
-	@echo "... test/test_addNum.i"
-	@echo "... test/test_addNum.s"
 .PHONY : help
 
 
