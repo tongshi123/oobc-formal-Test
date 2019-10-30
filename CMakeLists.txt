@@ -47,7 +47,12 @@ add_executable(
     src/Rectangle.cpp
     test/test_GetRectArea.cpp
     )
-    
+
+add_executable(
+    test_GetRectCircum
+    src/Rectangle.cpp
+    test/test_GetRectCircum.cpp
+    )    
     
 set(UT_DIR ${PROJECT_SOURCE_DIR}/test/)
 file(GLOB unit_tests test/*.cpp)
