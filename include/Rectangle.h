@@ -1,7 +1,7 @@
 /*
  * Rectangle.h
  *
- *  Created on: 2019年10月29日
+ *  Created on: 2019年10月30日
  *      Author: tongShi
 */
 
@@ -13,6 +13,7 @@ class Rectangle
 public:
 	Rectangle(int height, int width);
 	int getArea() const;
+	int getCircum() const;
 	
 private:
 	int m_height;
