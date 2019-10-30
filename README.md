@@ -1,3 +1,7 @@
+create new branch v1..
+
+
+
 [![Build Status](https://travis-ci.org/jing-q-xu/cpp_dev_skeleton.svg?branch=master)](https://travis-ci.org/jing-q-xu/cpp_dev_skeleton/builds)
 [![Coverage Status](https://coveralls.io/repos/github/jing-q-xu/cpp_dev_skeleton/badge.svg?branch=master)](https://coveralls.io/github/jing-q-xu/cpp_dev_skeleton?branch=master)
 [![License](https://img.shields.io/badge/license-%20BSD--3-blue.svg)](../master/LICENSE)
@@ -27,3 +31,5 @@ make -j
 cd ..
 ./run_test
 ```
+
+
