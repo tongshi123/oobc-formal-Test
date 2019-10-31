@@ -27,27 +27,32 @@ int Rectangle::getCircum() const{
 		return 0; 	
 }
 
-
+/*
 int Rectangle::getHeight() const{
 	if(m_height < 0){
 		return 0;	
 	}
 	return m_height;
-}
+}*/
 
+/*
 int Rectangle::getWidth() const{
 	if(m_width < 0){
 		return 0;
 	}
 	return m_width;
-}
+}*/
 
 void Rectangle::setHeight(int newHeight){
-	m_height = newHeight;
+	if(newHeight > 0){
+		m_height = newHeight;
+	}
 }
 
 void Rectangle::setWidth(int newWidth){
-	m_width = newWidth;
+	if(newWidth > 0){
+		m_width = newWidth;
+	}
 }
 
 

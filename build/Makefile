@@ -304,6 +304,19 @@ test_GetRectArea/fast:
 .PHONY : test_GetRectArea/fast
 
 #=============================================================================
+# Target rules for targets named test_SetRectHeightWidth
+
+# Build rule for target.
+test_SetRectHeightWidth: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_SetRectHeightWidth
+.PHONY : test_SetRectHeightWidth
+
+# fast build rule for target.
+test_SetRectHeightWidth/fast:
+	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/build
+.PHONY : test_SetRectHeightWidth/fast
+
+#=============================================================================
 # Target rules for targets named ExperimentalStart
 
 # Build rule for target.
@@ -406,19 +419,6 @@ Experimental: cmake_check_build_system
 Experimental/fast:
 	$(MAKE) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/build
 .PHONY : Experimental/fast
-
-#=============================================================================
-# Target rules for targets named test_GetRectHeightWidth
-
-# Build rule for target.
-test_GetRectHeightWidth: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_GetRectHeightWidth
-.PHONY : test_GetRectHeightWidth
-
-# fast build rule for target.
-test_GetRectHeightWidth/fast:
-	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/build
-.PHONY : test_GetRectHeightWidth/fast
 
 #=============================================================================
 # Target rules for targets named NightlySubmit
@@ -599,7 +599,7 @@ src/Rectangle.o: src/Rectangle.cpp.o
 src/Rectangle.cpp.o:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.o
 	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.o
-	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/src/Rectangle.cpp.o
+	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/src/Rectangle.cpp.o
 .PHONY : src/Rectangle.cpp.o
 
 src/Rectangle.i: src/Rectangle.cpp.i
@@ -610,7 +610,7 @@ src/Rectangle.i: src/Rectangle.cpp.i
 src/Rectangle.cpp.i:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.i
 	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.i
-	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/src/Rectangle.cpp.i
+	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/src/Rectangle.cpp.i
 .PHONY : src/Rectangle.cpp.i
 
 src/Rectangle.s: src/Rectangle.cpp.s
@@ -621,7 +621,7 @@ src/Rectangle.s: src/Rectangle.cpp.s
 src/Rectangle.cpp.s:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.s
 	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.s
-	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/src/Rectangle.cpp.s
+	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/src/Rectangle.cpp.s
 .PHONY : src/Rectangle.cpp.s
 
 test/test_GetRectArea.o: test/test_GetRectArea.cpp.o
@@ -678,32 +678,32 @@ test/test_GetRectCircum.cpp.s:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/test/test_GetRectCircum.cpp.s
 .PHONY : test/test_GetRectCircum.cpp.s
 
-test/test_GetRectHeightWidth.o: test/test_GetRectHeightWidth.cpp.o
+test/test_SetRectHeightWidth.o: test/test_SetRectHeightWidth.cpp.o
 
-.PHONY : test/test_GetRectHeightWidth.o
+.PHONY : test/test_SetRectHeightWidth.o
 
 # target to build an object file
-test/test_GetRectHeightWidth.cpp.o:
-	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/test/test_GetRectHeightWidth.cpp.o
-.PHONY : test/test_GetRectHeightWidth.cpp.o
+test/test_SetRectHeightWidth.cpp.o:
+	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/test/test_SetRectHeightWidth.cpp.o
+.PHONY : test/test_SetRectHeightWidth.cpp.o
 
-test/test_GetRectHeightWidth.i: test/test_GetRectHeightWidth.cpp.i
+test/test_SetRectHeightWidth.i: test/test_SetRectHeightWidth.cpp.i
 
-.PHONY : test/test_GetRectHeightWidth.i
+.PHONY : test/test_SetRectHeightWidth.i
 
 # target to preprocess a source file
-test/test_GetRectHeightWidth.cpp.i:
-	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/test/test_GetRectHeightWidth.cpp.i
-.PHONY : test/test_GetRectHeightWidth.cpp.i
+test/test_SetRectHeightWidth.cpp.i:
+	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/test/test_SetRectHeightWidth.cpp.i
+.PHONY : test/test_SetRectHeightWidth.cpp.i
 
-test/test_GetRectHeightWidth.s: test/test_GetRectHeightWidth.cpp.s
+test/test_SetRectHeightWidth.s: test/test_SetRectHeightWidth.cpp.s
 
-.PHONY : test/test_GetRectHeightWidth.s
+.PHONY : test/test_SetRectHeightWidth.s
 
 # target to generate assembly for a file
-test/test_GetRectHeightWidth.cpp.s:
-	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/test/test_GetRectHeightWidth.cpp.s
-.PHONY : test/test_GetRectHeightWidth.cpp.s
+test/test_SetRectHeightWidth.cpp.s:
+	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/test/test_SetRectHeightWidth.cpp.s
+.PHONY : test/test_SetRectHeightWidth.cpp.s
 
 # Help Target
 help:
@@ -727,6 +727,7 @@ help:
 	@echo "... ContinuousMemCheck"
 	@echo "... Nightly"
 	@echo "... test_GetRectArea"
+	@echo "... test_SetRectHeightWidth"
 	@echo "... ExperimentalStart"
 	@echo "... NightlyBuild"
 	@echo "... NightlyTest"
@@ -735,7 +736,6 @@ help:
 	@echo "... NightlyMemCheck"
 	@echo "... ExperimentalSubmit"
 	@echo "... Experimental"
-	@echo "... test_GetRectHeightWidth"
 	@echo "... NightlySubmit"
 	@echo "... ContinuousConfigure"
 	@echo "... NightlyCoverage"
@@ -761,9 +761,9 @@ help:
 	@echo "... test/test_GetRectCircum.o"
 	@echo "... test/test_GetRectCircum.i"
 	@echo "... test/test_GetRectCircum.s"
-	@echo "... test/test_GetRectHeightWidth.o"
-	@echo "... test/test_GetRectHeightWidth.i"
-	@echo "... test/test_GetRectHeightWidth.s"
+	@echo "... test/test_SetRectHeightWidth.o"
+	@echo "... test/test_SetRectHeightWidth.i"
+	@echo "... test/test_SetRectHeightWidth.s"
 .PHONY : help
 
 

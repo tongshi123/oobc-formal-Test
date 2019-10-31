@@ -14,6 +14,7 @@
 /home/shitong/cpp_dev_skeleton/build/CMakeFiles/ContinuousMemCheck.dir
 /home/shitong/cpp_dev_skeleton/build/CMakeFiles/Nightly.dir
 /home/shitong/cpp_dev_skeleton/build/CMakeFiles/test_GetRectArea.dir
+/home/shitong/cpp_dev_skeleton/build/CMakeFiles/test_SetRectHeightWidth.dir
 /home/shitong/cpp_dev_skeleton/build/CMakeFiles/ExperimentalStart.dir
 /home/shitong/cpp_dev_skeleton/build/CMakeFiles/NightlyBuild.dir
 /home/shitong/cpp_dev_skeleton/build/CMakeFiles/NightlyTest.dir
@@ -22,7 +23,6 @@
 /home/shitong/cpp_dev_skeleton/build/CMakeFiles/NightlyMemCheck.dir
 /home/shitong/cpp_dev_skeleton/build/CMakeFiles/ExperimentalSubmit.dir
 /home/shitong/cpp_dev_skeleton/build/CMakeFiles/Experimental.dir
-/home/shitong/cpp_dev_skeleton/build/CMakeFiles/test_GetRectHeightWidth.dir
 /home/shitong/cpp_dev_skeleton/build/CMakeFiles/NightlySubmit.dir
 /home/shitong/cpp_dev_skeleton/build/CMakeFiles/ContinuousConfigure.dir
 /home/shitong/cpp_dev_skeleton/build/CMakeFiles/NightlyCoverage.dir

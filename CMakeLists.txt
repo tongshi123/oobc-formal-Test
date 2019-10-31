@@ -55,9 +55,9 @@ add_executable(
     )    
     
 add_executable(
-    test_GetRectHeightWidth
+    test_SetRectHeightWidth
     src/Rectangle.cpp
-    test/test_GetRectHeightWidth.cpp
+    test/test_SetRectHeightWidth.cpp
     )    
 
 set(UT_DIR ${PROJECT_SOURCE_DIR}/test/)
