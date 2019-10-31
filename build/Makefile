@@ -200,6 +200,19 @@ ContinuousStart/fast:
 .PHONY : ContinuousStart/fast
 
 #=============================================================================
+# Target rules for targets named ExperimentalMemCheck
+
+# Build rule for target.
+ExperimentalMemCheck: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalMemCheck
+.PHONY : ExperimentalMemCheck
+
+# fast build rule for target.
+ExperimentalMemCheck/fast:
+	$(MAKE) -f CMakeFiles/ExperimentalMemCheck.dir/build.make CMakeFiles/ExperimentalMemCheck.dir/build
+.PHONY : ExperimentalMemCheck/fast
+
+#=============================================================================
 # Target rules for targets named NightlyUpdate
 
 # Build rule for target.
@@ -213,19 +226,6 @@ NightlyUpdate/fast:
 .PHONY : NightlyUpdate/fast
 
 #=============================================================================
-# Target rules for targets named test_GetRectCircum
-
-# Build rule for target.
-test_GetRectCircum: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_GetRectCircum
-.PHONY : test_GetRectCircum
-
-# fast build rule for target.
-test_GetRectCircum/fast:
-	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/build
-.PHONY : test_GetRectCircum/fast
-
-#=============================================================================
 # Target rules for targets named Continuous
 
 # Build rule for target.
@@ -237,6 +237,19 @@ Continuous: cmake_check_build_system
 Continuous/fast:
 	$(MAKE) -f CMakeFiles/Continuous.dir/build.make CMakeFiles/Continuous.dir/build
 .PHONY : Continuous/fast
+
+#=============================================================================
+# Target rules for targets named test_GetRectCircum
+
+# Build rule for target.
+test_GetRectCircum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_GetRectCircum
+.PHONY : test_GetRectCircum
+
+# fast build rule for target.
+test_GetRectCircum/fast:
+	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/build
+.PHONY : test_GetRectCircum/fast
 
 #=============================================================================
 # Target rules for targets named googletest
@@ -291,17 +304,17 @@ test_GetRectArea/fast:
 .PHONY : test_GetRectArea/fast
 
 #=============================================================================
-# Target rules for targets named ExperimentalMemCheck
+# Target rules for targets named ExperimentalStart
 
 # Build rule for target.
-ExperimentalMemCheck: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalMemCheck
-.PHONY : ExperimentalMemCheck
+ExperimentalStart: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalStart
+.PHONY : ExperimentalStart
 
 # fast build rule for target.
-ExperimentalMemCheck/fast:
-	$(MAKE) -f CMakeFiles/ExperimentalMemCheck.dir/build.make CMakeFiles/ExperimentalMemCheck.dir/build
-.PHONY : ExperimentalMemCheck/fast
+ExperimentalStart/fast:
+	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/build
+.PHONY : ExperimentalStart/fast
 
 #=============================================================================
 # Target rules for targets named NightlyBuild
@@ -395,6 +408,19 @@ Experimental/fast:
 .PHONY : Experimental/fast
 
 #=============================================================================
+# Target rules for targets named test_GetRectHeightWidth
+
+# Build rule for target.
+test_GetRectHeightWidth: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_GetRectHeightWidth
+.PHONY : test_GetRectHeightWidth
+
+# fast build rule for target.
+test_GetRectHeightWidth/fast:
+	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/build
+.PHONY : test_GetRectHeightWidth/fast
+
+#=============================================================================
 # Target rules for targets named NightlySubmit
 
 # Build rule for target.
@@ -406,19 +432,6 @@ NightlySubmit: cmake_check_build_system
 NightlySubmit/fast:
 	$(MAKE) -f CMakeFiles/NightlySubmit.dir/build.make CMakeFiles/NightlySubmit.dir/build
 .PHONY : NightlySubmit/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalStart
-
-# Build rule for target.
-ExperimentalStart: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalStart
-.PHONY : ExperimentalStart
-
-# fast build rule for target.
-ExperimentalStart/fast:
-	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/build
-.PHONY : ExperimentalStart/fast
 
 #=============================================================================
 # Target rules for targets named ContinuousConfigure
@@ -586,6 +599,7 @@ src/Rectangle.o: src/Rectangle.cpp.o
 src/Rectangle.cpp.o:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.o
 	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.o
+	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/src/Rectangle.cpp.o
 .PHONY : src/Rectangle.cpp.o
 
 src/Rectangle.i: src/Rectangle.cpp.i
@@ -596,6 +610,7 @@ src/Rectangle.i: src/Rectangle.cpp.i
 src/Rectangle.cpp.i:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.i
 	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.i
+	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/src/Rectangle.cpp.i
 .PHONY : src/Rectangle.cpp.i
 
 src/Rectangle.s: src/Rectangle.cpp.s
@@ -606,6 +621,7 @@ src/Rectangle.s: src/Rectangle.cpp.s
 src/Rectangle.cpp.s:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.s
 	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.s
+	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/src/Rectangle.cpp.s
 .PHONY : src/Rectangle.cpp.s
 
 test/test_GetRectArea.o: test/test_GetRectArea.cpp.o
@@ -662,6 +678,33 @@ test/test_GetRectCircum.cpp.s:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/test/test_GetRectCircum.cpp.s
 .PHONY : test/test_GetRectCircum.cpp.s
 
+test/test_GetRectHeightWidth.o: test/test_GetRectHeightWidth.cpp.o
+
+.PHONY : test/test_GetRectHeightWidth.o
+
+# target to build an object file
+test/test_GetRectHeightWidth.cpp.o:
+	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/test/test_GetRectHeightWidth.cpp.o
+.PHONY : test/test_GetRectHeightWidth.cpp.o
+
+test/test_GetRectHeightWidth.i: test/test_GetRectHeightWidth.cpp.i
+
+.PHONY : test/test_GetRectHeightWidth.i
+
+# target to preprocess a source file
+test/test_GetRectHeightWidth.cpp.i:
+	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/test/test_GetRectHeightWidth.cpp.i
+.PHONY : test/test_GetRectHeightWidth.cpp.i
+
+test/test_GetRectHeightWidth.s: test/test_GetRectHeightWidth.cpp.s
+
+.PHONY : test/test_GetRectHeightWidth.s
+
+# target to generate assembly for a file
+test/test_GetRectHeightWidth.cpp.s:
+	$(MAKE) -f CMakeFiles/test_GetRectHeightWidth.dir/build.make CMakeFiles/test_GetRectHeightWidth.dir/test/test_GetRectHeightWidth.cpp.s
+.PHONY : test/test_GetRectHeightWidth.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -676,14 +719,15 @@ help:
 	@echo "... ContinuousBuild"
 	@echo "... ContinuousUpdate"
 	@echo "... ContinuousStart"
+	@echo "... ExperimentalMemCheck"
 	@echo "... NightlyUpdate"
-	@echo "... test_GetRectCircum"
 	@echo "... Continuous"
+	@echo "... test_GetRectCircum"
 	@echo "... googletest"
 	@echo "... ContinuousMemCheck"
 	@echo "... Nightly"
 	@echo "... test_GetRectArea"
-	@echo "... ExperimentalMemCheck"
+	@echo "... ExperimentalStart"
 	@echo "... NightlyBuild"
 	@echo "... NightlyTest"
 	@echo "... NightlyStart"
@@ -691,8 +735,8 @@ help:
 	@echo "... NightlyMemCheck"
 	@echo "... ExperimentalSubmit"
 	@echo "... Experimental"
+	@echo "... test_GetRectHeightWidth"
 	@echo "... NightlySubmit"
-	@echo "... ExperimentalStart"
 	@echo "... ContinuousConfigure"
 	@echo "... NightlyCoverage"
 	@echo "... ExperimentalUpdate"
@@ -717,6 +761,9 @@ help:
 	@echo "... test/test_GetRectCircum.o"
 	@echo "... test/test_GetRectCircum.i"
 	@echo "... test/test_GetRectCircum.s"
+	@echo "... test/test_GetRectHeightWidth.o"
+	@echo "... test/test_GetRectHeightWidth.i"
+	@echo "... test/test_GetRectHeightWidth.s"
 .PHONY : help
 
 

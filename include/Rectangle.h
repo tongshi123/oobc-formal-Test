@@ -15,6 +15,12 @@ public:
 	int getArea() const;
 	int getCircum() const;
 	
+	int getHeight() const;
+	int getWidth() const;
+
+	void setHeight(int newHeight);
+	void setWidth(int newWidth);
+	
 private:
 	int m_height;
 	int m_width;

@@ -54,6 +54,12 @@ add_executable(
     test/test_GetRectCircum.cpp
     )    
     
+add_executable(
+    test_GetRectHeightWidth
+    src/Rectangle.cpp
+    test/test_GetRectHeightWidth.cpp
+    )    
+
 set(UT_DIR ${PROJECT_SOURCE_DIR}/test/)
 file(GLOB unit_tests test/*.cpp)
 foreach(test_file_name ${unit_tests} ) 
