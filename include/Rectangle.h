@@ -11,6 +11,7 @@
 class Rectangle
 {
 public:
+	Rectangle(int length);
 	Rectangle(int height, int width);
 	int getArea() const;
 	int getCircum() const;

@@ -213,32 +213,6 @@ ExperimentalMemCheck/fast:
 .PHONY : ExperimentalMemCheck/fast
 
 #=============================================================================
-# Target rules for targets named NightlyUpdate
-
-# Build rule for target.
-NightlyUpdate: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NightlyUpdate
-.PHONY : NightlyUpdate
-
-# fast build rule for target.
-NightlyUpdate/fast:
-	$(MAKE) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/build
-.PHONY : NightlyUpdate/fast
-
-#=============================================================================
-# Target rules for targets named Continuous
-
-# Build rule for target.
-Continuous: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Continuous
-.PHONY : Continuous
-
-# fast build rule for target.
-Continuous/fast:
-	$(MAKE) -f CMakeFiles/Continuous.dir/build.make CMakeFiles/Continuous.dir/build
-.PHONY : Continuous/fast
-
-#=============================================================================
 # Target rules for targets named test_GetRectCircum
 
 # Build rule for target.
@@ -250,6 +224,32 @@ test_GetRectCircum: cmake_check_build_system
 test_GetRectCircum/fast:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/build
 .PHONY : test_GetRectCircum/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalTest
+
+# Build rule for target.
+ExperimentalTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalTest
+.PHONY : ExperimentalTest
+
+# fast build rule for target.
+ExperimentalTest/fast:
+	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
+.PHONY : ExperimentalTest/fast
+
+#=============================================================================
+# Target rules for targets named NightlyConfigure
+
+# Build rule for target.
+NightlyConfigure: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NightlyConfigure
+.PHONY : NightlyConfigure
+
+# fast build rule for target.
+NightlyConfigure/fast:
+	$(MAKE) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/build
+.PHONY : NightlyConfigure/fast
 
 #=============================================================================
 # Target rules for targets named googletest
@@ -304,6 +304,32 @@ test_GetRectArea/fast:
 .PHONY : test_GetRectArea/fast
 
 #=============================================================================
+# Target rules for targets named Continuous
+
+# Build rule for target.
+Continuous: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Continuous
+.PHONY : Continuous
+
+# fast build rule for target.
+Continuous/fast:
+	$(MAKE) -f CMakeFiles/Continuous.dir/build.make CMakeFiles/Continuous.dir/build
+.PHONY : Continuous/fast
+
+#=============================================================================
+# Target rules for targets named test_GetSquareCircum
+
+# Build rule for target.
+test_GetSquareCircum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_GetSquareCircum
+.PHONY : test_GetSquareCircum
+
+# fast build rule for target.
+test_GetSquareCircum/fast:
+	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/build
+.PHONY : test_GetSquareCircum/fast
+
+#=============================================================================
 # Target rules for targets named test_SetRectHeightWidth
 
 # Build rule for target.
@@ -330,45 +356,6 @@ ExperimentalStart/fast:
 .PHONY : ExperimentalStart/fast
 
 #=============================================================================
-# Target rules for targets named NightlyBuild
-
-# Build rule for target.
-NightlyBuild: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NightlyBuild
-.PHONY : NightlyBuild
-
-# fast build rule for target.
-NightlyBuild/fast:
-	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/build
-.PHONY : NightlyBuild/fast
-
-#=============================================================================
-# Target rules for targets named NightlyTest
-
-# Build rule for target.
-NightlyTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NightlyTest
-.PHONY : NightlyTest
-
-# fast build rule for target.
-NightlyTest/fast:
-	$(MAKE) -f CMakeFiles/NightlyTest.dir/build.make CMakeFiles/NightlyTest.dir/build
-.PHONY : NightlyTest/fast
-
-#=============================================================================
-# Target rules for targets named NightlyStart
-
-# Build rule for target.
-NightlyStart: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NightlyStart
-.PHONY : NightlyStart
-
-# fast build rule for target.
-NightlyStart/fast:
-	$(MAKE) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/build
-.PHONY : NightlyStart/fast
-
-#=============================================================================
 # Target rules for targets named NightlyMemoryCheck
 
 # Build rule for target.
@@ -393,6 +380,58 @@ NightlyMemCheck: cmake_check_build_system
 NightlyMemCheck/fast:
 	$(MAKE) -f CMakeFiles/NightlyMemCheck.dir/build.make CMakeFiles/NightlyMemCheck.dir/build
 .PHONY : NightlyMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named NightlyStart
+
+# Build rule for target.
+NightlyStart: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NightlyStart
+.PHONY : NightlyStart
+
+# fast build rule for target.
+NightlyStart/fast:
+	$(MAKE) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/build
+.PHONY : NightlyStart/fast
+
+#=============================================================================
+# Target rules for targets named NightlyUpdate
+
+# Build rule for target.
+NightlyUpdate: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NightlyUpdate
+.PHONY : NightlyUpdate
+
+# fast build rule for target.
+NightlyUpdate/fast:
+	$(MAKE) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/build
+.PHONY : NightlyUpdate/fast
+
+#=============================================================================
+# Target rules for targets named NightlyBuild
+
+# Build rule for target.
+NightlyBuild: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NightlyBuild
+.PHONY : NightlyBuild
+
+# fast build rule for target.
+NightlyBuild/fast:
+	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/build
+.PHONY : NightlyBuild/fast
+
+#=============================================================================
+# Target rules for targets named NightlyTest
+
+# Build rule for target.
+NightlyTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NightlyTest
+.PHONY : NightlyTest
+
+# fast build rule for target.
+NightlyTest/fast:
+	$(MAKE) -f CMakeFiles/NightlyTest.dir/build.make CMakeFiles/NightlyTest.dir/build
+.PHONY : NightlyTest/fast
 
 #=============================================================================
 # Target rules for targets named ExperimentalSubmit
@@ -445,6 +484,19 @@ ContinuousConfigure: cmake_check_build_system
 ContinuousConfigure/fast:
 	$(MAKE) -f CMakeFiles/ContinuousConfigure.dir/build.make CMakeFiles/ContinuousConfigure.dir/build
 .PHONY : ContinuousConfigure/fast
+
+#=============================================================================
+# Target rules for targets named test_GetSquareArea
+
+# Build rule for target.
+test_GetSquareArea: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_GetSquareArea
+.PHONY : test_GetSquareArea
+
+# fast build rule for target.
+test_GetSquareArea/fast:
+	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/build
+.PHONY : test_GetSquareArea/fast
 
 #=============================================================================
 # Target rules for targets named NightlyCoverage
@@ -511,32 +563,6 @@ ExperimentalBuild/fast:
 	$(MAKE) -f CMakeFiles/ExperimentalBuild.dir/build.make CMakeFiles/ExperimentalBuild.dir/build
 .PHONY : ExperimentalBuild/fast
 
-#=============================================================================
-# Target rules for targets named NightlyConfigure
-
-# Build rule for target.
-NightlyConfigure: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NightlyConfigure
-.PHONY : NightlyConfigure
-
-# fast build rule for target.
-NightlyConfigure/fast:
-	$(MAKE) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/build
-.PHONY : NightlyConfigure/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalTest
-
-# Build rule for target.
-ExperimentalTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalTest
-.PHONY : ExperimentalTest
-
-# fast build rule for target.
-ExperimentalTest/fast:
-	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
-.PHONY : ExperimentalTest/fast
-
 external/googletest/googletest/src/gtest-all.o: external/googletest/googletest/src/gtest-all.cc.o
 
 .PHONY : external/googletest/googletest/src/gtest-all.o
@@ -599,7 +625,9 @@ src/Rectangle.o: src/Rectangle.cpp.o
 src/Rectangle.cpp.o:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.o
 	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.o
+	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/src/Rectangle.cpp.o
 	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/src/Rectangle.cpp.o
+	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/src/Rectangle.cpp.o
 .PHONY : src/Rectangle.cpp.o
 
 src/Rectangle.i: src/Rectangle.cpp.i
@@ -610,7 +638,9 @@ src/Rectangle.i: src/Rectangle.cpp.i
 src/Rectangle.cpp.i:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.i
 	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.i
+	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/src/Rectangle.cpp.i
 	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/src/Rectangle.cpp.i
+	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/src/Rectangle.cpp.i
 .PHONY : src/Rectangle.cpp.i
 
 src/Rectangle.s: src/Rectangle.cpp.s
@@ -621,7 +651,9 @@ src/Rectangle.s: src/Rectangle.cpp.s
 src/Rectangle.cpp.s:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.s
 	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.s
+	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/src/Rectangle.cpp.s
 	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/src/Rectangle.cpp.s
+	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/src/Rectangle.cpp.s
 .PHONY : src/Rectangle.cpp.s
 
 test/test_GetRectArea.o: test/test_GetRectArea.cpp.o
@@ -678,6 +710,60 @@ test/test_GetRectCircum.cpp.s:
 	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/test/test_GetRectCircum.cpp.s
 .PHONY : test/test_GetRectCircum.cpp.s
 
+test/test_GetSquareArea.o: test/test_GetSquareArea.cpp.o
+
+.PHONY : test/test_GetSquareArea.o
+
+# target to build an object file
+test/test_GetSquareArea.cpp.o:
+	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/test/test_GetSquareArea.cpp.o
+.PHONY : test/test_GetSquareArea.cpp.o
+
+test/test_GetSquareArea.i: test/test_GetSquareArea.cpp.i
+
+.PHONY : test/test_GetSquareArea.i
+
+# target to preprocess a source file
+test/test_GetSquareArea.cpp.i:
+	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/test/test_GetSquareArea.cpp.i
+.PHONY : test/test_GetSquareArea.cpp.i
+
+test/test_GetSquareArea.s: test/test_GetSquareArea.cpp.s
+
+.PHONY : test/test_GetSquareArea.s
+
+# target to generate assembly for a file
+test/test_GetSquareArea.cpp.s:
+	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/test/test_GetSquareArea.cpp.s
+.PHONY : test/test_GetSquareArea.cpp.s
+
+test/test_GetSquareCircum.o: test/test_GetSquareCircum.cpp.o
+
+.PHONY : test/test_GetSquareCircum.o
+
+# target to build an object file
+test/test_GetSquareCircum.cpp.o:
+	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/test/test_GetSquareCircum.cpp.o
+.PHONY : test/test_GetSquareCircum.cpp.o
+
+test/test_GetSquareCircum.i: test/test_GetSquareCircum.cpp.i
+
+.PHONY : test/test_GetSquareCircum.i
+
+# target to preprocess a source file
+test/test_GetSquareCircum.cpp.i:
+	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/test/test_GetSquareCircum.cpp.i
+.PHONY : test/test_GetSquareCircum.cpp.i
+
+test/test_GetSquareCircum.s: test/test_GetSquareCircum.cpp.s
+
+.PHONY : test/test_GetSquareCircum.s
+
+# target to generate assembly for a file
+test/test_GetSquareCircum.cpp.s:
+	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/test/test_GetSquareCircum.cpp.s
+.PHONY : test/test_GetSquareCircum.cpp.s
+
 test/test_SetRectHeightWidth.o: test/test_SetRectHeightWidth.cpp.o
 
 .PHONY : test/test_SetRectHeightWidth.o
@@ -720,32 +806,34 @@ help:
 	@echo "... ContinuousUpdate"
 	@echo "... ContinuousStart"
 	@echo "... ExperimentalMemCheck"
-	@echo "... NightlyUpdate"
-	@echo "... Continuous"
 	@echo "... test_GetRectCircum"
+	@echo "... ExperimentalTest"
+	@echo "... NightlyConfigure"
 	@echo "... googletest"
 	@echo "... ContinuousMemCheck"
 	@echo "... Nightly"
 	@echo "... test_GetRectArea"
+	@echo "... Continuous"
+	@echo "... test_GetSquareCircum"
 	@echo "... test_SetRectHeightWidth"
 	@echo "... ExperimentalStart"
-	@echo "... NightlyBuild"
-	@echo "... NightlyTest"
-	@echo "... NightlyStart"
 	@echo "... NightlyMemoryCheck"
 	@echo "... NightlyMemCheck"
+	@echo "... NightlyStart"
+	@echo "... NightlyUpdate"
+	@echo "... NightlyBuild"
+	@echo "... NightlyTest"
 	@echo "... ExperimentalSubmit"
 	@echo "... Experimental"
 	@echo "... NightlySubmit"
 	@echo "... ContinuousConfigure"
+	@echo "... test_GetSquareArea"
 	@echo "... NightlyCoverage"
 	@echo "... ExperimentalUpdate"
 	@echo "... test"
 	@echo "... ExperimentalConfigure"
 	@echo "... ExperimentalCoverage"
 	@echo "... ExperimentalBuild"
-	@echo "... NightlyConfigure"
-	@echo "... ExperimentalTest"
 	@echo "... external/googletest/googletest/src/gtest-all.o"
 	@echo "... external/googletest/googletest/src/gtest-all.i"
 	@echo "... external/googletest/googletest/src/gtest-all.s"
@@ -761,6 +849,12 @@ help:
 	@echo "... test/test_GetRectCircum.o"
 	@echo "... test/test_GetRectCircum.i"
 	@echo "... test/test_GetRectCircum.s"
+	@echo "... test/test_GetSquareArea.o"
+	@echo "... test/test_GetSquareArea.i"
+	@echo "... test/test_GetSquareArea.s"
+	@echo "... test/test_GetSquareCircum.o"
+	@echo "... test/test_GetSquareCircum.i"
+	@echo "... test/test_GetSquareCircum.s"
 	@echo "... test/test_SetRectHeightWidth.o"
 	@echo "... test/test_SetRectHeightWidth.i"
 	@echo "... test/test_SetRectHeightWidth.s"

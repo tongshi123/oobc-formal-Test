@@ -7,6 +7,10 @@
 
 #include "Rectangle.h"
 
+Rectangle::Rectangle(int length):m_height(length), m_width(length){
+
+}
+
 Rectangle::Rectangle(int height, int width):m_height(height), m_width(width){
 
 };

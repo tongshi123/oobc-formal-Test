@@ -58,6 +58,18 @@ add_executable(
     test_SetRectHeightWidth
     src/Rectangle.cpp
     test/test_SetRectHeightWidth.cpp
+    )
+    
+add_executable(
+    test_GetSquareArea
+    src/Rectangle.cpp
+    test/test_GetSquareArea.cpp
+    )    
+
+add_executable(
+    test_GetSquareCircum
+    src/Rectangle.cpp
+    test/test_GetSquareCircum.cpp
     )    
 
 set(UT_DIR ${PROJECT_SOURCE_DIR}/test/)
