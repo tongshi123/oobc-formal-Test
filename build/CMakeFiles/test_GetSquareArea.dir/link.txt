@@ -1,1 +1,0 @@
-/usr/bin/c++    -g -O0 --coverage -std=c++11   CMakeFiles/test_GetSquareArea.dir/src/Rectangle.cpp.o CMakeFiles/test_GetSquareArea.dir/test/test_GetSquareArea.cpp.o  -o test_GetSquareArea -rdynamic libgoogletest.a -lpthread 

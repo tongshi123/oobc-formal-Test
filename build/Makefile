@@ -174,19 +174,6 @@ ContinuousBuild/fast:
 .PHONY : ContinuousBuild/fast
 
 #=============================================================================
-# Target rules for targets named ContinuousUpdate
-
-# Build rule for target.
-ContinuousUpdate: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ContinuousUpdate
-.PHONY : ContinuousUpdate
-
-# fast build rule for target.
-ContinuousUpdate/fast:
-	$(MAKE) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/build
-.PHONY : ContinuousUpdate/fast
-
-#=============================================================================
 # Target rules for targets named ContinuousStart
 
 # Build rule for target.
@@ -213,56 +200,17 @@ ExperimentalMemCheck/fast:
 .PHONY : ExperimentalMemCheck/fast
 
 #=============================================================================
-# Target rules for targets named test_GetRectCircum
+# Target rules for targets named NightlyUpdate
 
 # Build rule for target.
-test_GetRectCircum: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_GetRectCircum
-.PHONY : test_GetRectCircum
+NightlyUpdate: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NightlyUpdate
+.PHONY : NightlyUpdate
 
 # fast build rule for target.
-test_GetRectCircum/fast:
-	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/build
-.PHONY : test_GetRectCircum/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalTest
-
-# Build rule for target.
-ExperimentalTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalTest
-.PHONY : ExperimentalTest
-
-# fast build rule for target.
-ExperimentalTest/fast:
-	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
-.PHONY : ExperimentalTest/fast
-
-#=============================================================================
-# Target rules for targets named NightlyConfigure
-
-# Build rule for target.
-NightlyConfigure: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NightlyConfigure
-.PHONY : NightlyConfigure
-
-# fast build rule for target.
-NightlyConfigure/fast:
-	$(MAKE) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/build
-.PHONY : NightlyConfigure/fast
-
-#=============================================================================
-# Target rules for targets named googletest
-
-# Build rule for target.
-googletest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 googletest
-.PHONY : googletest
-
-# fast build rule for target.
-googletest/fast:
-	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
-.PHONY : googletest/fast
+NightlyUpdate/fast:
+	$(MAKE) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/build
+.PHONY : NightlyUpdate/fast
 
 #=============================================================================
 # Target rules for targets named ContinuousMemCheck
@@ -291,17 +239,56 @@ Nightly/fast:
 .PHONY : Nightly/fast
 
 #=============================================================================
-# Target rules for targets named test_GetRectArea
+# Target rules for targets named test_PlainGetItemSumTest
 
 # Build rule for target.
-test_GetRectArea: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_GetRectArea
-.PHONY : test_GetRectArea
+test_PlainGetItemSumTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_PlainGetItemSumTest
+.PHONY : test_PlainGetItemSumTest
 
 # fast build rule for target.
-test_GetRectArea/fast:
-	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/build
-.PHONY : test_GetRectArea/fast
+test_PlainGetItemSumTest/fast:
+	$(MAKE) -f CMakeFiles/test_PlainGetItemSumTest.dir/build.make CMakeFiles/test_PlainGetItemSumTest.dir/build
+.PHONY : test_PlainGetItemSumTest/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousUpdate
+
+# Build rule for target.
+ContinuousUpdate: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ContinuousUpdate
+.PHONY : ContinuousUpdate
+
+# fast build rule for target.
+ContinuousUpdate/fast:
+	$(MAKE) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/build
+.PHONY : ContinuousUpdate/fast
+
+#=============================================================================
+# Target rules for targets named test_VIPGetBargainSumTest
+
+# Build rule for target.
+test_VIPGetBargainSumTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_VIPGetBargainSumTest
+.PHONY : test_VIPGetBargainSumTest
+
+# fast build rule for target.
+test_VIPGetBargainSumTest/fast:
+	$(MAKE) -f CMakeFiles/test_VIPGetBargainSumTest.dir/build.make CMakeFiles/test_VIPGetBargainSumTest.dir/build
+.PHONY : test_VIPGetBargainSumTest/fast
+
+#=============================================================================
+# Target rules for targets named NightlyBuild
+
+# Build rule for target.
+NightlyBuild: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NightlyBuild
+.PHONY : NightlyBuild
+
+# fast build rule for target.
+NightlyBuild/fast:
+	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/build
+.PHONY : NightlyBuild/fast
 
 #=============================================================================
 # Target rules for targets named Continuous
@@ -317,43 +304,30 @@ Continuous/fast:
 .PHONY : Continuous/fast
 
 #=============================================================================
-# Target rules for targets named test_GetSquareCircum
+# Target rules for targets named test_VIPGetCommonItemSum
 
 # Build rule for target.
-test_GetSquareCircum: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_GetSquareCircum
-.PHONY : test_GetSquareCircum
+test_VIPGetCommonItemSum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_VIPGetCommonItemSum
+.PHONY : test_VIPGetCommonItemSum
 
 # fast build rule for target.
-test_GetSquareCircum/fast:
-	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/build
-.PHONY : test_GetSquareCircum/fast
+test_VIPGetCommonItemSum/fast:
+	$(MAKE) -f CMakeFiles/test_VIPGetCommonItemSum.dir/build.make CMakeFiles/test_VIPGetCommonItemSum.dir/build
+.PHONY : test_VIPGetCommonItemSum/fast
 
 #=============================================================================
-# Target rules for targets named test_SetRectHeightWidth
+# Target rules for targets named NightlyStart
 
 # Build rule for target.
-test_SetRectHeightWidth: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_SetRectHeightWidth
-.PHONY : test_SetRectHeightWidth
+NightlyStart: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NightlyStart
+.PHONY : NightlyStart
 
 # fast build rule for target.
-test_SetRectHeightWidth/fast:
-	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/build
-.PHONY : test_SetRectHeightWidth/fast
-
-#=============================================================================
-# Target rules for targets named ExperimentalStart
-
-# Build rule for target.
-ExperimentalStart: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalStart
-.PHONY : ExperimentalStart
-
-# fast build rule for target.
-ExperimentalStart/fast:
-	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/build
-.PHONY : ExperimentalStart/fast
+NightlyStart/fast:
+	$(MAKE) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/build
+.PHONY : NightlyStart/fast
 
 #=============================================================================
 # Target rules for targets named NightlyMemoryCheck
@@ -382,43 +356,17 @@ NightlyMemCheck/fast:
 .PHONY : NightlyMemCheck/fast
 
 #=============================================================================
-# Target rules for targets named NightlyStart
+# Target rules for targets named googletest
 
 # Build rule for target.
-NightlyStart: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NightlyStart
-.PHONY : NightlyStart
+googletest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 googletest
+.PHONY : googletest
 
 # fast build rule for target.
-NightlyStart/fast:
-	$(MAKE) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/build
-.PHONY : NightlyStart/fast
-
-#=============================================================================
-# Target rules for targets named NightlyUpdate
-
-# Build rule for target.
-NightlyUpdate: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NightlyUpdate
-.PHONY : NightlyUpdate
-
-# fast build rule for target.
-NightlyUpdate/fast:
-	$(MAKE) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/build
-.PHONY : NightlyUpdate/fast
-
-#=============================================================================
-# Target rules for targets named NightlyBuild
-
-# Build rule for target.
-NightlyBuild: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NightlyBuild
-.PHONY : NightlyBuild
-
-# fast build rule for target.
-NightlyBuild/fast:
-	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/build
-.PHONY : NightlyBuild/fast
+googletest/fast:
+	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
+.PHONY : googletest/fast
 
 #=============================================================================
 # Target rules for targets named NightlyTest
@@ -473,6 +421,19 @@ NightlySubmit/fast:
 .PHONY : NightlySubmit/fast
 
 #=============================================================================
+# Target rules for targets named ExperimentalStart
+
+# Build rule for target.
+ExperimentalStart: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalStart
+.PHONY : ExperimentalStart
+
+# fast build rule for target.
+ExperimentalStart/fast:
+	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/build
+.PHONY : ExperimentalStart/fast
+
+#=============================================================================
 # Target rules for targets named ContinuousConfigure
 
 # Build rule for target.
@@ -484,19 +445,6 @@ ContinuousConfigure: cmake_check_build_system
 ContinuousConfigure/fast:
 	$(MAKE) -f CMakeFiles/ContinuousConfigure.dir/build.make CMakeFiles/ContinuousConfigure.dir/build
 .PHONY : ContinuousConfigure/fast
-
-#=============================================================================
-# Target rules for targets named test_GetSquareArea
-
-# Build rule for target.
-test_GetSquareArea: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_GetSquareArea
-.PHONY : test_GetSquareArea
-
-# fast build rule for target.
-test_GetSquareArea/fast:
-	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/build
-.PHONY : test_GetSquareArea/fast
 
 #=============================================================================
 # Target rules for targets named NightlyCoverage
@@ -563,6 +511,32 @@ ExperimentalBuild/fast:
 	$(MAKE) -f CMakeFiles/ExperimentalBuild.dir/build.make CMakeFiles/ExperimentalBuild.dir/build
 .PHONY : ExperimentalBuild/fast
 
+#=============================================================================
+# Target rules for targets named NightlyConfigure
+
+# Build rule for target.
+NightlyConfigure: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NightlyConfigure
+.PHONY : NightlyConfigure
+
+# fast build rule for target.
+NightlyConfigure/fast:
+	$(MAKE) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/build
+.PHONY : NightlyConfigure/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalTest
+
+# Build rule for target.
+ExperimentalTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ExperimentalTest
+.PHONY : ExperimentalTest
+
+# fast build rule for target.
+ExperimentalTest/fast:
+	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
+.PHONY : ExperimentalTest/fast
+
 external/googletest/googletest/src/gtest-all.o: external/googletest/googletest/src/gtest-all.cc.o
 
 .PHONY : external/googletest/googletest/src/gtest-all.o
@@ -617,179 +591,119 @@ external/googletest/googletest/src/gtest_main.cc.s:
 	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/external/googletest/googletest/src/gtest_main.cc.s
 .PHONY : external/googletest/googletest/src/gtest_main.cc.s
 
-src/Rectangle.o: src/Rectangle.cpp.o
+src/ShoppingSystem.o: src/ShoppingSystem.cpp.o
 
-.PHONY : src/Rectangle.o
-
-# target to build an object file
-src/Rectangle.cpp.o:
-	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.o
-	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.o
-	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/src/Rectangle.cpp.o
-	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/src/Rectangle.cpp.o
-	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/src/Rectangle.cpp.o
-.PHONY : src/Rectangle.cpp.o
-
-src/Rectangle.i: src/Rectangle.cpp.i
-
-.PHONY : src/Rectangle.i
-
-# target to preprocess a source file
-src/Rectangle.cpp.i:
-	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.i
-	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.i
-	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/src/Rectangle.cpp.i
-	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/src/Rectangle.cpp.i
-	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/src/Rectangle.cpp.i
-.PHONY : src/Rectangle.cpp.i
-
-src/Rectangle.s: src/Rectangle.cpp.s
-
-.PHONY : src/Rectangle.s
-
-# target to generate assembly for a file
-src/Rectangle.cpp.s:
-	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.s
-	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/src/Rectangle.cpp.s
-	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/src/Rectangle.cpp.s
-	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/src/Rectangle.cpp.s
-	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/src/Rectangle.cpp.s
-.PHONY : src/Rectangle.cpp.s
-
-test/test_GetRectArea.o: test/test_GetRectArea.cpp.o
-
-.PHONY : test/test_GetRectArea.o
+.PHONY : src/ShoppingSystem.o
 
 # target to build an object file
-test/test_GetRectArea.cpp.o:
-	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/test/test_GetRectArea.cpp.o
-.PHONY : test/test_GetRectArea.cpp.o
+src/ShoppingSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/test_PlainGetItemSumTest.dir/build.make CMakeFiles/test_PlainGetItemSumTest.dir/src/ShoppingSystem.cpp.o
+	$(MAKE) -f CMakeFiles/test_VIPGetBargainSumTest.dir/build.make CMakeFiles/test_VIPGetBargainSumTest.dir/src/ShoppingSystem.cpp.o
+	$(MAKE) -f CMakeFiles/test_VIPGetCommonItemSum.dir/build.make CMakeFiles/test_VIPGetCommonItemSum.dir/src/ShoppingSystem.cpp.o
+.PHONY : src/ShoppingSystem.cpp.o
 
-test/test_GetRectArea.i: test/test_GetRectArea.cpp.i
+src/ShoppingSystem.i: src/ShoppingSystem.cpp.i
 
-.PHONY : test/test_GetRectArea.i
+.PHONY : src/ShoppingSystem.i
 
 # target to preprocess a source file
-test/test_GetRectArea.cpp.i:
-	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/test/test_GetRectArea.cpp.i
-.PHONY : test/test_GetRectArea.cpp.i
+src/ShoppingSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/test_PlainGetItemSumTest.dir/build.make CMakeFiles/test_PlainGetItemSumTest.dir/src/ShoppingSystem.cpp.i
+	$(MAKE) -f CMakeFiles/test_VIPGetBargainSumTest.dir/build.make CMakeFiles/test_VIPGetBargainSumTest.dir/src/ShoppingSystem.cpp.i
+	$(MAKE) -f CMakeFiles/test_VIPGetCommonItemSum.dir/build.make CMakeFiles/test_VIPGetCommonItemSum.dir/src/ShoppingSystem.cpp.i
+.PHONY : src/ShoppingSystem.cpp.i
 
-test/test_GetRectArea.s: test/test_GetRectArea.cpp.s
+src/ShoppingSystem.s: src/ShoppingSystem.cpp.s
 
-.PHONY : test/test_GetRectArea.s
+.PHONY : src/ShoppingSystem.s
 
 # target to generate assembly for a file
-test/test_GetRectArea.cpp.s:
-	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/test/test_GetRectArea.cpp.s
-.PHONY : test/test_GetRectArea.cpp.s
+src/ShoppingSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/test_PlainGetItemSumTest.dir/build.make CMakeFiles/test_PlainGetItemSumTest.dir/src/ShoppingSystem.cpp.s
+	$(MAKE) -f CMakeFiles/test_VIPGetBargainSumTest.dir/build.make CMakeFiles/test_VIPGetBargainSumTest.dir/src/ShoppingSystem.cpp.s
+	$(MAKE) -f CMakeFiles/test_VIPGetCommonItemSum.dir/build.make CMakeFiles/test_VIPGetCommonItemSum.dir/src/ShoppingSystem.cpp.s
+.PHONY : src/ShoppingSystem.cpp.s
 
-test/test_GetRectCircum.o: test/test_GetRectCircum.cpp.o
+test/test_PlainGetItemSumTest.o: test/test_PlainGetItemSumTest.cpp.o
 
-.PHONY : test/test_GetRectCircum.o
+.PHONY : test/test_PlainGetItemSumTest.o
 
 # target to build an object file
-test/test_GetRectCircum.cpp.o:
-	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/test/test_GetRectCircum.cpp.o
-.PHONY : test/test_GetRectCircum.cpp.o
+test/test_PlainGetItemSumTest.cpp.o:
+	$(MAKE) -f CMakeFiles/test_PlainGetItemSumTest.dir/build.make CMakeFiles/test_PlainGetItemSumTest.dir/test/test_PlainGetItemSumTest.cpp.o
+.PHONY : test/test_PlainGetItemSumTest.cpp.o
 
-test/test_GetRectCircum.i: test/test_GetRectCircum.cpp.i
+test/test_PlainGetItemSumTest.i: test/test_PlainGetItemSumTest.cpp.i
 
-.PHONY : test/test_GetRectCircum.i
+.PHONY : test/test_PlainGetItemSumTest.i
 
 # target to preprocess a source file
-test/test_GetRectCircum.cpp.i:
-	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/test/test_GetRectCircum.cpp.i
-.PHONY : test/test_GetRectCircum.cpp.i
+test/test_PlainGetItemSumTest.cpp.i:
+	$(MAKE) -f CMakeFiles/test_PlainGetItemSumTest.dir/build.make CMakeFiles/test_PlainGetItemSumTest.dir/test/test_PlainGetItemSumTest.cpp.i
+.PHONY : test/test_PlainGetItemSumTest.cpp.i
 
-test/test_GetRectCircum.s: test/test_GetRectCircum.cpp.s
+test/test_PlainGetItemSumTest.s: test/test_PlainGetItemSumTest.cpp.s
 
-.PHONY : test/test_GetRectCircum.s
+.PHONY : test/test_PlainGetItemSumTest.s
 
 # target to generate assembly for a file
-test/test_GetRectCircum.cpp.s:
-	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/test/test_GetRectCircum.cpp.s
-.PHONY : test/test_GetRectCircum.cpp.s
+test/test_PlainGetItemSumTest.cpp.s:
+	$(MAKE) -f CMakeFiles/test_PlainGetItemSumTest.dir/build.make CMakeFiles/test_PlainGetItemSumTest.dir/test/test_PlainGetItemSumTest.cpp.s
+.PHONY : test/test_PlainGetItemSumTest.cpp.s
 
-test/test_GetSquareArea.o: test/test_GetSquareArea.cpp.o
+test/test_VIPGetBargainSumTest.o: test/test_VIPGetBargainSumTest.cpp.o
 
-.PHONY : test/test_GetSquareArea.o
+.PHONY : test/test_VIPGetBargainSumTest.o
 
 # target to build an object file
-test/test_GetSquareArea.cpp.o:
-	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/test/test_GetSquareArea.cpp.o
-.PHONY : test/test_GetSquareArea.cpp.o
+test/test_VIPGetBargainSumTest.cpp.o:
+	$(MAKE) -f CMakeFiles/test_VIPGetBargainSumTest.dir/build.make CMakeFiles/test_VIPGetBargainSumTest.dir/test/test_VIPGetBargainSumTest.cpp.o
+.PHONY : test/test_VIPGetBargainSumTest.cpp.o
 
-test/test_GetSquareArea.i: test/test_GetSquareArea.cpp.i
+test/test_VIPGetBargainSumTest.i: test/test_VIPGetBargainSumTest.cpp.i
 
-.PHONY : test/test_GetSquareArea.i
+.PHONY : test/test_VIPGetBargainSumTest.i
 
 # target to preprocess a source file
-test/test_GetSquareArea.cpp.i:
-	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/test/test_GetSquareArea.cpp.i
-.PHONY : test/test_GetSquareArea.cpp.i
+test/test_VIPGetBargainSumTest.cpp.i:
+	$(MAKE) -f CMakeFiles/test_VIPGetBargainSumTest.dir/build.make CMakeFiles/test_VIPGetBargainSumTest.dir/test/test_VIPGetBargainSumTest.cpp.i
+.PHONY : test/test_VIPGetBargainSumTest.cpp.i
 
-test/test_GetSquareArea.s: test/test_GetSquareArea.cpp.s
+test/test_VIPGetBargainSumTest.s: test/test_VIPGetBargainSumTest.cpp.s
 
-.PHONY : test/test_GetSquareArea.s
+.PHONY : test/test_VIPGetBargainSumTest.s
 
 # target to generate assembly for a file
-test/test_GetSquareArea.cpp.s:
-	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/test/test_GetSquareArea.cpp.s
-.PHONY : test/test_GetSquareArea.cpp.s
+test/test_VIPGetBargainSumTest.cpp.s:
+	$(MAKE) -f CMakeFiles/test_VIPGetBargainSumTest.dir/build.make CMakeFiles/test_VIPGetBargainSumTest.dir/test/test_VIPGetBargainSumTest.cpp.s
+.PHONY : test/test_VIPGetBargainSumTest.cpp.s
 
-test/test_GetSquareCircum.o: test/test_GetSquareCircum.cpp.o
+test/test_VIPGetCommonItemSum.o: test/test_VIPGetCommonItemSum.cpp.o
 
-.PHONY : test/test_GetSquareCircum.o
+.PHONY : test/test_VIPGetCommonItemSum.o
 
 # target to build an object file
-test/test_GetSquareCircum.cpp.o:
-	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/test/test_GetSquareCircum.cpp.o
-.PHONY : test/test_GetSquareCircum.cpp.o
+test/test_VIPGetCommonItemSum.cpp.o:
+	$(MAKE) -f CMakeFiles/test_VIPGetCommonItemSum.dir/build.make CMakeFiles/test_VIPGetCommonItemSum.dir/test/test_VIPGetCommonItemSum.cpp.o
+.PHONY : test/test_VIPGetCommonItemSum.cpp.o
 
-test/test_GetSquareCircum.i: test/test_GetSquareCircum.cpp.i
+test/test_VIPGetCommonItemSum.i: test/test_VIPGetCommonItemSum.cpp.i
 
-.PHONY : test/test_GetSquareCircum.i
-
-# target to preprocess a source file
-test/test_GetSquareCircum.cpp.i:
-	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/test/test_GetSquareCircum.cpp.i
-.PHONY : test/test_GetSquareCircum.cpp.i
-
-test/test_GetSquareCircum.s: test/test_GetSquareCircum.cpp.s
-
-.PHONY : test/test_GetSquareCircum.s
-
-# target to generate assembly for a file
-test/test_GetSquareCircum.cpp.s:
-	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/test/test_GetSquareCircum.cpp.s
-.PHONY : test/test_GetSquareCircum.cpp.s
-
-test/test_SetRectHeightWidth.o: test/test_SetRectHeightWidth.cpp.o
-
-.PHONY : test/test_SetRectHeightWidth.o
-
-# target to build an object file
-test/test_SetRectHeightWidth.cpp.o:
-	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/test/test_SetRectHeightWidth.cpp.o
-.PHONY : test/test_SetRectHeightWidth.cpp.o
-
-test/test_SetRectHeightWidth.i: test/test_SetRectHeightWidth.cpp.i
-
-.PHONY : test/test_SetRectHeightWidth.i
+.PHONY : test/test_VIPGetCommonItemSum.i
 
 # target to preprocess a source file
-test/test_SetRectHeightWidth.cpp.i:
-	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/test/test_SetRectHeightWidth.cpp.i
-.PHONY : test/test_SetRectHeightWidth.cpp.i
+test/test_VIPGetCommonItemSum.cpp.i:
+	$(MAKE) -f CMakeFiles/test_VIPGetCommonItemSum.dir/build.make CMakeFiles/test_VIPGetCommonItemSum.dir/test/test_VIPGetCommonItemSum.cpp.i
+.PHONY : test/test_VIPGetCommonItemSum.cpp.i
 
-test/test_SetRectHeightWidth.s: test/test_SetRectHeightWidth.cpp.s
+test/test_VIPGetCommonItemSum.s: test/test_VIPGetCommonItemSum.cpp.s
 
-.PHONY : test/test_SetRectHeightWidth.s
+.PHONY : test/test_VIPGetCommonItemSum.s
 
 # target to generate assembly for a file
-test/test_SetRectHeightWidth.cpp.s:
-	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/test/test_SetRectHeightWidth.cpp.s
-.PHONY : test/test_SetRectHeightWidth.cpp.s
+test/test_VIPGetCommonItemSum.cpp.s:
+	$(MAKE) -f CMakeFiles/test_VIPGetCommonItemSum.dir/build.make CMakeFiles/test_VIPGetCommonItemSum.dir/test/test_VIPGetCommonItemSum.cpp.s
+.PHONY : test/test_VIPGetCommonItemSum.cpp.s
 
 # Help Target
 help:
@@ -803,61 +717,53 @@ help:
 	@echo "... ContinuousCoverage"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousBuild"
-	@echo "... ContinuousUpdate"
 	@echo "... ContinuousStart"
 	@echo "... ExperimentalMemCheck"
-	@echo "... test_GetRectCircum"
-	@echo "... ExperimentalTest"
-	@echo "... NightlyConfigure"
-	@echo "... googletest"
+	@echo "... NightlyUpdate"
 	@echo "... ContinuousMemCheck"
 	@echo "... Nightly"
-	@echo "... test_GetRectArea"
+	@echo "... test_PlainGetItemSumTest"
+	@echo "... ContinuousUpdate"
+	@echo "... test_VIPGetBargainSumTest"
+	@echo "... NightlyBuild"
 	@echo "... Continuous"
-	@echo "... test_GetSquareCircum"
-	@echo "... test_SetRectHeightWidth"
-	@echo "... ExperimentalStart"
+	@echo "... test_VIPGetCommonItemSum"
+	@echo "... NightlyStart"
 	@echo "... NightlyMemoryCheck"
 	@echo "... NightlyMemCheck"
-	@echo "... NightlyStart"
-	@echo "... NightlyUpdate"
-	@echo "... NightlyBuild"
+	@echo "... googletest"
 	@echo "... NightlyTest"
 	@echo "... ExperimentalSubmit"
 	@echo "... Experimental"
 	@echo "... NightlySubmit"
+	@echo "... ExperimentalStart"
 	@echo "... ContinuousConfigure"
-	@echo "... test_GetSquareArea"
 	@echo "... NightlyCoverage"
 	@echo "... ExperimentalUpdate"
 	@echo "... test"
 	@echo "... ExperimentalConfigure"
 	@echo "... ExperimentalCoverage"
 	@echo "... ExperimentalBuild"
+	@echo "... NightlyConfigure"
+	@echo "... ExperimentalTest"
 	@echo "... external/googletest/googletest/src/gtest-all.o"
 	@echo "... external/googletest/googletest/src/gtest-all.i"
 	@echo "... external/googletest/googletest/src/gtest-all.s"
 	@echo "... external/googletest/googletest/src/gtest_main.o"
 	@echo "... external/googletest/googletest/src/gtest_main.i"
 	@echo "... external/googletest/googletest/src/gtest_main.s"
-	@echo "... src/Rectangle.o"
-	@echo "... src/Rectangle.i"
-	@echo "... src/Rectangle.s"
-	@echo "... test/test_GetRectArea.o"
-	@echo "... test/test_GetRectArea.i"
-	@echo "... test/test_GetRectArea.s"
-	@echo "... test/test_GetRectCircum.o"
-	@echo "... test/test_GetRectCircum.i"
-	@echo "... test/test_GetRectCircum.s"
-	@echo "... test/test_GetSquareArea.o"
-	@echo "... test/test_GetSquareArea.i"
-	@echo "... test/test_GetSquareArea.s"
-	@echo "... test/test_GetSquareCircum.o"
-	@echo "... test/test_GetSquareCircum.i"
-	@echo "... test/test_GetSquareCircum.s"
-	@echo "... test/test_SetRectHeightWidth.o"
-	@echo "... test/test_SetRectHeightWidth.i"
-	@echo "... test/test_SetRectHeightWidth.s"
+	@echo "... src/ShoppingSystem.o"
+	@echo "... src/ShoppingSystem.i"
+	@echo "... src/ShoppingSystem.s"
+	@echo "... test/test_PlainGetItemSumTest.o"
+	@echo "... test/test_PlainGetItemSumTest.i"
+	@echo "... test/test_PlainGetItemSumTest.s"
+	@echo "... test/test_VIPGetBargainSumTest.o"
+	@echo "... test/test_VIPGetBargainSumTest.i"
+	@echo "... test/test_VIPGetBargainSumTest.s"
+	@echo "... test/test_VIPGetCommonItemSum.o"
+	@echo "... test/test_VIPGetCommonItemSum.i"
+	@echo "... test/test_VIPGetCommonItemSum.s"
 .PHONY : help
 
 

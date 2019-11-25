@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -O0 --coverage -std=c++11   CMakeFiles/test_PlainGetItemSumTest.dir/src/ShoppingSystem.cpp.o CMakeFiles/test_PlainGetItemSumTest.dir/test/test_PlainGetItemSumTest.cpp.o  -o test_PlainGetItemSumTest -rdynamic libgoogletest.a -lpthread 

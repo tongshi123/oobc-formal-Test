@@ -188,38 +188,6 @@ clean: CMakeFiles/ContinuousBuild.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ContinuousUpdate.dir
-
-# All Build rule for target.
-CMakeFiles/ContinuousUpdate.dir/all:
-	$(MAKE) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/depend
-	$(MAKE) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target ContinuousUpdate"
-.PHONY : CMakeFiles/ContinuousUpdate.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousUpdate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/ContinuousUpdate.dir/rule
-
-# Convenience name for target.
-ContinuousUpdate: CMakeFiles/ContinuousUpdate.dir/rule
-
-.PHONY : ContinuousUpdate
-
-# clean rule for target.
-CMakeFiles/ContinuousUpdate.dir/clean:
-	$(MAKE) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/clean
-.PHONY : CMakeFiles/ContinuousUpdate.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/ContinuousUpdate.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/ContinuousStart.dir
 
 # All Build rule for target.
@@ -284,140 +252,34 @@ clean: CMakeFiles/ExperimentalMemCheck.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_GetRectCircum.dir
+# Target rules for target CMakeFiles/NightlyUpdate.dir
 
 # All Build rule for target.
-CMakeFiles/test_GetRectCircum.dir/all: CMakeFiles/googletest.dir/all
-	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/depend
-	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num=7,8,9 "Built target test_GetRectCircum"
-.PHONY : CMakeFiles/test_GetRectCircum.dir/all
-
-# Include target in all.
-all: CMakeFiles/test_GetRectCircum.dir/all
-
-.PHONY : all
+CMakeFiles/NightlyUpdate.dir/all:
+	$(MAKE) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/depend
+	$(MAKE) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target NightlyUpdate"
+.PHONY : CMakeFiles/NightlyUpdate.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_GetRectCircum.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_GetRectCircum.dir/all
+CMakeFiles/NightlyUpdate.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_GetRectCircum.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyUpdate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlyUpdate.dir/rule
 
 # Convenience name for target.
-test_GetRectCircum: CMakeFiles/test_GetRectCircum.dir/rule
+NightlyUpdate: CMakeFiles/NightlyUpdate.dir/rule
 
-.PHONY : test_GetRectCircum
-
-# clean rule for target.
-CMakeFiles/test_GetRectCircum.dir/clean:
-	$(MAKE) -f CMakeFiles/test_GetRectCircum.dir/build.make CMakeFiles/test_GetRectCircum.dir/clean
-.PHONY : CMakeFiles/test_GetRectCircum.dir/clean
+.PHONY : NightlyUpdate
 
 # clean rule for target.
-clean: CMakeFiles/test_GetRectCircum.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ExperimentalTest.dir
-
-# All Build rule for target.
-CMakeFiles/ExperimentalTest.dir/all:
-	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/depend
-	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target ExperimentalTest"
-.PHONY : CMakeFiles/ExperimentalTest.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ExperimentalTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/ExperimentalTest.dir/rule
-
-# Convenience name for target.
-ExperimentalTest: CMakeFiles/ExperimentalTest.dir/rule
-
-.PHONY : ExperimentalTest
+CMakeFiles/NightlyUpdate.dir/clean:
+	$(MAKE) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/clean
+.PHONY : CMakeFiles/NightlyUpdate.dir/clean
 
 # clean rule for target.
-CMakeFiles/ExperimentalTest.dir/clean:
-	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/clean
-.PHONY : CMakeFiles/ExperimentalTest.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/ExperimentalTest.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/NightlyConfigure.dir
-
-# All Build rule for target.
-CMakeFiles/NightlyConfigure.dir/all:
-	$(MAKE) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/depend
-	$(MAKE) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target NightlyConfigure"
-.PHONY : CMakeFiles/NightlyConfigure.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyConfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/NightlyConfigure.dir/rule
-
-# Convenience name for target.
-NightlyConfigure: CMakeFiles/NightlyConfigure.dir/rule
-
-.PHONY : NightlyConfigure
-
-# clean rule for target.
-CMakeFiles/NightlyConfigure.dir/clean:
-	$(MAKE) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/clean
-.PHONY : CMakeFiles/NightlyConfigure.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/NightlyConfigure.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/googletest.dir
-
-# All Build rule for target.
-CMakeFiles/googletest.dir/all:
-	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/depend
-	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num=1,2,3 "Built target googletest"
-.PHONY : CMakeFiles/googletest.dir/all
-
-# Include target in all.
-all: CMakeFiles/googletest.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/googletest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/googletest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/googletest.dir/rule
-
-# Convenience name for target.
-googletest: CMakeFiles/googletest.dir/rule
-
-.PHONY : googletest
-
-# clean rule for target.
-CMakeFiles/googletest.dir/clean:
-	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/clean
-.PHONY : CMakeFiles/googletest.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/googletest.dir/clean
+clean: CMakeFiles/NightlyUpdate.dir/clean
 
 .PHONY : clean
 
@@ -486,39 +348,140 @@ clean: CMakeFiles/Nightly.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_GetRectArea.dir
+# Target rules for target CMakeFiles/test_PlainGetItemSumTest.dir
 
 # All Build rule for target.
-CMakeFiles/test_GetRectArea.dir/all: CMakeFiles/googletest.dir/all
-	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/depend
-	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num=4,5,6 "Built target test_GetRectArea"
-.PHONY : CMakeFiles/test_GetRectArea.dir/all
+CMakeFiles/test_PlainGetItemSumTest.dir/all: CMakeFiles/googletest.dir/all
+	$(MAKE) -f CMakeFiles/test_PlainGetItemSumTest.dir/build.make CMakeFiles/test_PlainGetItemSumTest.dir/depend
+	$(MAKE) -f CMakeFiles/test_PlainGetItemSumTest.dir/build.make CMakeFiles/test_PlainGetItemSumTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num=4,5,6 "Built target test_PlainGetItemSumTest"
+.PHONY : CMakeFiles/test_PlainGetItemSumTest.dir/all
 
 # Include target in all.
-all: CMakeFiles/test_GetRectArea.dir/all
+all: CMakeFiles/test_PlainGetItemSumTest.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_GetRectArea.dir/rule: cmake_check_build_system
+CMakeFiles/test_PlainGetItemSumTest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_GetRectArea.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_PlainGetItemSumTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_GetRectArea.dir/rule
+.PHONY : CMakeFiles/test_PlainGetItemSumTest.dir/rule
 
 # Convenience name for target.
-test_GetRectArea: CMakeFiles/test_GetRectArea.dir/rule
+test_PlainGetItemSumTest: CMakeFiles/test_PlainGetItemSumTest.dir/rule
 
-.PHONY : test_GetRectArea
-
-# clean rule for target.
-CMakeFiles/test_GetRectArea.dir/clean:
-	$(MAKE) -f CMakeFiles/test_GetRectArea.dir/build.make CMakeFiles/test_GetRectArea.dir/clean
-.PHONY : CMakeFiles/test_GetRectArea.dir/clean
+.PHONY : test_PlainGetItemSumTest
 
 # clean rule for target.
-clean: CMakeFiles/test_GetRectArea.dir/clean
+CMakeFiles/test_PlainGetItemSumTest.dir/clean:
+	$(MAKE) -f CMakeFiles/test_PlainGetItemSumTest.dir/build.make CMakeFiles/test_PlainGetItemSumTest.dir/clean
+.PHONY : CMakeFiles/test_PlainGetItemSumTest.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_PlainGetItemSumTest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ContinuousUpdate.dir
+
+# All Build rule for target.
+CMakeFiles/ContinuousUpdate.dir/all:
+	$(MAKE) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/depend
+	$(MAKE) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target ContinuousUpdate"
+.PHONY : CMakeFiles/ContinuousUpdate.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousUpdate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+.PHONY : CMakeFiles/ContinuousUpdate.dir/rule
+
+# Convenience name for target.
+ContinuousUpdate: CMakeFiles/ContinuousUpdate.dir/rule
+
+.PHONY : ContinuousUpdate
+
+# clean rule for target.
+CMakeFiles/ContinuousUpdate.dir/clean:
+	$(MAKE) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/clean
+.PHONY : CMakeFiles/ContinuousUpdate.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ContinuousUpdate.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_VIPGetBargainSumTest.dir
+
+# All Build rule for target.
+CMakeFiles/test_VIPGetBargainSumTest.dir/all: CMakeFiles/googletest.dir/all
+	$(MAKE) -f CMakeFiles/test_VIPGetBargainSumTest.dir/build.make CMakeFiles/test_VIPGetBargainSumTest.dir/depend
+	$(MAKE) -f CMakeFiles/test_VIPGetBargainSumTest.dir/build.make CMakeFiles/test_VIPGetBargainSumTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num=7,8,9 "Built target test_VIPGetBargainSumTest"
+.PHONY : CMakeFiles/test_VIPGetBargainSumTest.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_VIPGetBargainSumTest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_VIPGetBargainSumTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_VIPGetBargainSumTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_VIPGetBargainSumTest.dir/rule
+
+# Convenience name for target.
+test_VIPGetBargainSumTest: CMakeFiles/test_VIPGetBargainSumTest.dir/rule
+
+.PHONY : test_VIPGetBargainSumTest
+
+# clean rule for target.
+CMakeFiles/test_VIPGetBargainSumTest.dir/clean:
+	$(MAKE) -f CMakeFiles/test_VIPGetBargainSumTest.dir/build.make CMakeFiles/test_VIPGetBargainSumTest.dir/clean
+.PHONY : CMakeFiles/test_VIPGetBargainSumTest.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_VIPGetBargainSumTest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/NightlyBuild.dir
+
+# All Build rule for target.
+CMakeFiles/NightlyBuild.dir/all:
+	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/depend
+	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target NightlyBuild"
+.PHONY : CMakeFiles/NightlyBuild.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlyBuild.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyBuild.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlyBuild.dir/rule
+
+# Convenience name for target.
+NightlyBuild: CMakeFiles/NightlyBuild.dir/rule
+
+.PHONY : NightlyBuild
+
+# clean rule for target.
+CMakeFiles/NightlyBuild.dir/clean:
+	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/clean
+.PHONY : CMakeFiles/NightlyBuild.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/NightlyBuild.dir/clean
 
 .PHONY : clean
 
@@ -555,108 +518,71 @@ clean: CMakeFiles/Continuous.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_GetSquareCircum.dir
+# Target rules for target CMakeFiles/test_VIPGetCommonItemSum.dir
 
 # All Build rule for target.
-CMakeFiles/test_GetSquareCircum.dir/all: CMakeFiles/googletest.dir/all
-	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/depend
-	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num=13,14,15 "Built target test_GetSquareCircum"
-.PHONY : CMakeFiles/test_GetSquareCircum.dir/all
+CMakeFiles/test_VIPGetCommonItemSum.dir/all: CMakeFiles/googletest.dir/all
+	$(MAKE) -f CMakeFiles/test_VIPGetCommonItemSum.dir/build.make CMakeFiles/test_VIPGetCommonItemSum.dir/depend
+	$(MAKE) -f CMakeFiles/test_VIPGetCommonItemSum.dir/build.make CMakeFiles/test_VIPGetCommonItemSum.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num=10,11,12 "Built target test_VIPGetCommonItemSum"
+.PHONY : CMakeFiles/test_VIPGetCommonItemSum.dir/all
 
 # Include target in all.
-all: CMakeFiles/test_GetSquareCircum.dir/all
+all: CMakeFiles/test_VIPGetCommonItemSum.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_GetSquareCircum.dir/rule: cmake_check_build_system
+CMakeFiles/test_VIPGetCommonItemSum.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_GetSquareCircum.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_VIPGetCommonItemSum.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_GetSquareCircum.dir/rule
+.PHONY : CMakeFiles/test_VIPGetCommonItemSum.dir/rule
 
 # Convenience name for target.
-test_GetSquareCircum: CMakeFiles/test_GetSquareCircum.dir/rule
+test_VIPGetCommonItemSum: CMakeFiles/test_VIPGetCommonItemSum.dir/rule
 
-.PHONY : test_GetSquareCircum
-
-# clean rule for target.
-CMakeFiles/test_GetSquareCircum.dir/clean:
-	$(MAKE) -f CMakeFiles/test_GetSquareCircum.dir/build.make CMakeFiles/test_GetSquareCircum.dir/clean
-.PHONY : CMakeFiles/test_GetSquareCircum.dir/clean
+.PHONY : test_VIPGetCommonItemSum
 
 # clean rule for target.
-clean: CMakeFiles/test_GetSquareCircum.dir/clean
+CMakeFiles/test_VIPGetCommonItemSum.dir/clean:
+	$(MAKE) -f CMakeFiles/test_VIPGetCommonItemSum.dir/build.make CMakeFiles/test_VIPGetCommonItemSum.dir/clean
+.PHONY : CMakeFiles/test_VIPGetCommonItemSum.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_VIPGetCommonItemSum.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_SetRectHeightWidth.dir
+# Target rules for target CMakeFiles/NightlyStart.dir
 
 # All Build rule for target.
-CMakeFiles/test_SetRectHeightWidth.dir/all: CMakeFiles/googletest.dir/all
-	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/depend
-	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num=16,17,18 "Built target test_SetRectHeightWidth"
-.PHONY : CMakeFiles/test_SetRectHeightWidth.dir/all
-
-# Include target in all.
-all: CMakeFiles/test_SetRectHeightWidth.dir/all
-
-.PHONY : all
+CMakeFiles/NightlyStart.dir/all:
+	$(MAKE) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/depend
+	$(MAKE) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target NightlyStart"
+.PHONY : CMakeFiles/NightlyStart.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_SetRectHeightWidth.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_SetRectHeightWidth.dir/all
+CMakeFiles/NightlyStart.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_SetRectHeightWidth.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyStart.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlyStart.dir/rule
 
 # Convenience name for target.
-test_SetRectHeightWidth: CMakeFiles/test_SetRectHeightWidth.dir/rule
+NightlyStart: CMakeFiles/NightlyStart.dir/rule
 
-.PHONY : test_SetRectHeightWidth
-
-# clean rule for target.
-CMakeFiles/test_SetRectHeightWidth.dir/clean:
-	$(MAKE) -f CMakeFiles/test_SetRectHeightWidth.dir/build.make CMakeFiles/test_SetRectHeightWidth.dir/clean
-.PHONY : CMakeFiles/test_SetRectHeightWidth.dir/clean
+.PHONY : NightlyStart
 
 # clean rule for target.
-clean: CMakeFiles/test_SetRectHeightWidth.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ExperimentalStart.dir
-
-# All Build rule for target.
-CMakeFiles/ExperimentalStart.dir/all:
-	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/depend
-	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target ExperimentalStart"
-.PHONY : CMakeFiles/ExperimentalStart.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ExperimentalStart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalStart.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/ExperimentalStart.dir/rule
-
-# Convenience name for target.
-ExperimentalStart: CMakeFiles/ExperimentalStart.dir/rule
-
-.PHONY : ExperimentalStart
+CMakeFiles/NightlyStart.dir/clean:
+	$(MAKE) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/clean
+.PHONY : CMakeFiles/NightlyStart.dir/clean
 
 # clean rule for target.
-CMakeFiles/ExperimentalStart.dir/clean:
-	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/clean
-.PHONY : CMakeFiles/ExperimentalStart.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/ExperimentalStart.dir/clean
+clean: CMakeFiles/NightlyStart.dir/clean
 
 .PHONY : clean
 
@@ -725,98 +651,39 @@ clean: CMakeFiles/NightlyMemCheck.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/NightlyStart.dir
+# Target rules for target CMakeFiles/googletest.dir
 
 # All Build rule for target.
-CMakeFiles/NightlyStart.dir/all:
-	$(MAKE) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/depend
-	$(MAKE) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target NightlyStart"
-.PHONY : CMakeFiles/NightlyStart.dir/all
+CMakeFiles/googletest.dir/all:
+	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/depend
+	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num=1,2,3 "Built target googletest"
+.PHONY : CMakeFiles/googletest.dir/all
+
+# Include target in all.
+all: CMakeFiles/googletest.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/NightlyStart.dir/rule: cmake_check_build_system
+CMakeFiles/googletest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/googletest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyStart.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/NightlyStart.dir/rule
+.PHONY : CMakeFiles/googletest.dir/rule
 
 # Convenience name for target.
-NightlyStart: CMakeFiles/NightlyStart.dir/rule
+googletest: CMakeFiles/googletest.dir/rule
 
-.PHONY : NightlyStart
-
-# clean rule for target.
-CMakeFiles/NightlyStart.dir/clean:
-	$(MAKE) -f CMakeFiles/NightlyStart.dir/build.make CMakeFiles/NightlyStart.dir/clean
-.PHONY : CMakeFiles/NightlyStart.dir/clean
+.PHONY : googletest
 
 # clean rule for target.
-clean: CMakeFiles/NightlyStart.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/NightlyUpdate.dir
-
-# All Build rule for target.
-CMakeFiles/NightlyUpdate.dir/all:
-	$(MAKE) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/depend
-	$(MAKE) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target NightlyUpdate"
-.PHONY : CMakeFiles/NightlyUpdate.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/NightlyUpdate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyUpdate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/NightlyUpdate.dir/rule
-
-# Convenience name for target.
-NightlyUpdate: CMakeFiles/NightlyUpdate.dir/rule
-
-.PHONY : NightlyUpdate
+CMakeFiles/googletest.dir/clean:
+	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/clean
+.PHONY : CMakeFiles/googletest.dir/clean
 
 # clean rule for target.
-CMakeFiles/NightlyUpdate.dir/clean:
-	$(MAKE) -f CMakeFiles/NightlyUpdate.dir/build.make CMakeFiles/NightlyUpdate.dir/clean
-.PHONY : CMakeFiles/NightlyUpdate.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/NightlyUpdate.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/NightlyBuild.dir
-
-# All Build rule for target.
-CMakeFiles/NightlyBuild.dir/all:
-	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/depend
-	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target NightlyBuild"
-.PHONY : CMakeFiles/NightlyBuild.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/NightlyBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/NightlyBuild.dir/rule
-
-# Convenience name for target.
-NightlyBuild: CMakeFiles/NightlyBuild.dir/rule
-
-.PHONY : NightlyBuild
-
-# clean rule for target.
-CMakeFiles/NightlyBuild.dir/clean:
-	$(MAKE) -f CMakeFiles/NightlyBuild.dir/build.make CMakeFiles/NightlyBuild.dir/clean
-.PHONY : CMakeFiles/NightlyBuild.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/NightlyBuild.dir/clean
+clean: CMakeFiles/googletest.dir/clean
 
 .PHONY : clean
 
@@ -949,6 +816,38 @@ clean: CMakeFiles/NightlySubmit.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/ExperimentalStart.dir
+
+# All Build rule for target.
+CMakeFiles/ExperimentalStart.dir/all:
+	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/depend
+	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target ExperimentalStart"
+.PHONY : CMakeFiles/ExperimentalStart.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ExperimentalStart.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalStart.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+.PHONY : CMakeFiles/ExperimentalStart.dir/rule
+
+# Convenience name for target.
+ExperimentalStart: CMakeFiles/ExperimentalStart.dir/rule
+
+.PHONY : ExperimentalStart
+
+# clean rule for target.
+CMakeFiles/ExperimentalStart.dir/clean:
+	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/clean
+.PHONY : CMakeFiles/ExperimentalStart.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ExperimentalStart.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ContinuousConfigure.dir
 
 # All Build rule for target.
@@ -977,43 +876,6 @@ CMakeFiles/ContinuousConfigure.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/ContinuousConfigure.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/test_GetSquareArea.dir
-
-# All Build rule for target.
-CMakeFiles/test_GetSquareArea.dir/all: CMakeFiles/googletest.dir/all
-	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/depend
-	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num=10,11,12 "Built target test_GetSquareArea"
-.PHONY : CMakeFiles/test_GetSquareArea.dir/all
-
-# Include target in all.
-all: CMakeFiles/test_GetSquareArea.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test_GetSquareArea.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_GetSquareArea.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_GetSquareArea.dir/rule
-
-# Convenience name for target.
-test_GetSquareArea: CMakeFiles/test_GetSquareArea.dir/rule
-
-.PHONY : test_GetSquareArea
-
-# clean rule for target.
-CMakeFiles/test_GetSquareArea.dir/clean:
-	$(MAKE) -f CMakeFiles/test_GetSquareArea.dir/build.make CMakeFiles/test_GetSquareArea.dir/clean
-.PHONY : CMakeFiles/test_GetSquareArea.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/test_GetSquareArea.dir/clean
 
 .PHONY : clean
 
@@ -1174,6 +1036,70 @@ CMakeFiles/ExperimentalBuild.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/ExperimentalBuild.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/NightlyConfigure.dir
+
+# All Build rule for target.
+CMakeFiles/NightlyConfigure.dir/all:
+	$(MAKE) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/depend
+	$(MAKE) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target NightlyConfigure"
+.PHONY : CMakeFiles/NightlyConfigure.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NightlyConfigure.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+.PHONY : CMakeFiles/NightlyConfigure.dir/rule
+
+# Convenience name for target.
+NightlyConfigure: CMakeFiles/NightlyConfigure.dir/rule
+
+.PHONY : NightlyConfigure
+
+# clean rule for target.
+CMakeFiles/NightlyConfigure.dir/clean:
+	$(MAKE) -f CMakeFiles/NightlyConfigure.dir/build.make CMakeFiles/NightlyConfigure.dir/clean
+.PHONY : CMakeFiles/NightlyConfigure.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/NightlyConfigure.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ExperimentalTest.dir
+
+# All Build rule for target.
+CMakeFiles/ExperimentalTest.dir/all:
+	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/depend
+	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shitong/cpp_dev_skeleton/build/CMakeFiles --progress-num= "Built target ExperimentalTest"
+.PHONY : CMakeFiles/ExperimentalTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ExperimentalTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ExperimentalTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shitong/cpp_dev_skeleton/build/CMakeFiles 0
+.PHONY : CMakeFiles/ExperimentalTest.dir/rule
+
+# Convenience name for target.
+ExperimentalTest: CMakeFiles/ExperimentalTest.dir/rule
+
+.PHONY : ExperimentalTest
+
+# clean rule for target.
+CMakeFiles/ExperimentalTest.dir/clean:
+	$(MAKE) -f CMakeFiles/ExperimentalTest.dir/build.make CMakeFiles/ExperimentalTest.dir/clean
+.PHONY : CMakeFiles/ExperimentalTest.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ExperimentalTest.dir/clean
 
 .PHONY : clean
 

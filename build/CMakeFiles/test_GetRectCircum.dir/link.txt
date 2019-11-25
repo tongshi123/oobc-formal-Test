@@ -1,1 +1,0 @@
-/usr/bin/c++    -g -O0 --coverage -std=c++11   CMakeFiles/test_GetRectCircum.dir/src/Rectangle.cpp.o CMakeFiles/test_GetRectCircum.dir/test/test_GetRectCircum.cpp.o  -o test_GetRectCircum -rdynamic libgoogletest.a -lpthread 

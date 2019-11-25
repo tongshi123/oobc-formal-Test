@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -O0 --coverage -std=c++11   CMakeFiles/test_VIPGetBargainSumTest.dir/src/ShoppingSystem.cpp.o CMakeFiles/test_VIPGetBargainSumTest.dir/test/test_VIPGetBargainSumTest.cpp.o  -o test_VIPGetBargainSumTest -rdynamic libgoogletest.a -lpthread 

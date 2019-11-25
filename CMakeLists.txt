@@ -41,36 +41,23 @@ endforeach()
 
 add_library(googletest ${GOOGLETEST_SOURCES})
 
+add_executable(
+    test_PlainGetItemSumTest
+    src/ShoppingSystem.cpp
+    test/test_PlainGetItemSumTest.cpp
+    )    
 
 add_executable(
-    test_GetRectArea
-    src/Rectangle.cpp
-    test/test_GetRectArea.cpp
+    test_VIPGetCommonItemSum
+    src/ShoppingSystem.cpp
+    test/test_VIPGetCommonItemSum.cpp
     )
-
+   
 add_executable(
-    test_GetRectCircum
-    src/Rectangle.cpp
-    test/test_GetRectCircum.cpp
-    )    
-    
-add_executable(
-    test_SetRectHeightWidth
-    src/Rectangle.cpp
-    test/test_SetRectHeightWidth.cpp
-    )
-    
-add_executable(
-    test_GetSquareArea
-    src/Rectangle.cpp
-    test/test_GetSquareArea.cpp
-    )    
-
-add_executable(
-    test_GetSquareCircum
-    src/Rectangle.cpp
-    test/test_GetSquareCircum.cpp
-    )    
+    test_VIPGetBargainSumTest
+    src/ShoppingSystem.cpp
+    test/test_VIPGetBargainSumTest.cpp
+   )
 
 set(UT_DIR ${PROJECT_SOURCE_DIR}/test/)
 file(GLOB unit_tests test/*.cpp)
