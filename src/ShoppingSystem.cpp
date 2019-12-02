@@ -19,7 +19,8 @@ ShoppingSystem::ShoppingSystem(Rank rank): m_rank(rank){
 double ShoppingSystem::getSum() const{
 	return sum;
 }
-
+//特价商品的处理没实现？
+//在实际需求中，商店里会有成千上万种产品，下面的代码会不会爆炸？
 void ShoppingSystem::buy(ItemName item){
 	switch(item){
 		case Coffee:
